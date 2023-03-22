@@ -1,0 +1,102 @@
+/* Custom colors */
+#green {
+    color: #17a673;
+}
+#red {
+    color: #be2617;
+}
+.red {
+    color: #be2617;
+}
+
+.green {
+    color: #17a673;
+}
+
+.blue-link{
+    color:#4e73df;
+}
+
+/*Custom text*/
+.custom-text-bold{
+    font-weight: bold;
+}
+
+.text-medium{
+    font-size: 0.7em;
+}
+
+.tx-center{
+    text-align: center;
+}
+
+/* TABLES */
+.vertical-scroll{
+    max-height: 400px;
+}
+
+/* LOGO */
+.brand{
+    background-color: #fff;
+}
+
+/* General */
+.hidden{
+    display: none;
+}
+.display{
+    display: block;
+}
+
+.no-button{
+    background: none;
+    border: none
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+
+/* Members custom style */
+.member-icons{
+    text-decoration: none;
+    color: #333;
+}
+.member-icons:hover {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Members payments style */
+#payment_delete_button{
+    background: none;
+    border: none
+}
+
+
+.tab-background input{
+    background-color: lightgrey;
+}
+.tab-background select{
+    background-color: lightgrey;
+}
+.tab-background textarea{
+    background-color: lightgrey;
+}
+
+.last-receipts{
+    background-color: #9dccba;
+}
+
+.tab-background label{
+    background-color: #ffe787;
+}
+.tab-background label{
+    color: #333;
+}
+
+.disabled-anchor{
+    pointer-events: none;
+    background-color: gray;
+}

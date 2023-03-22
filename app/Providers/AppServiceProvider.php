@@ -37,6 +37,7 @@ class AppServiceProvider extends ServiceProvider
                 apiToken: strval(config('services.mailgun.token'))
             )
         );
+        //for reading exclude file that have in migration
         $this->loadMigrationsFrom(base_path('database/migrations/exclude'));
     }
 }

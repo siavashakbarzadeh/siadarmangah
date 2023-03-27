@@ -1,8 +1,8 @@
 <div class="card shadow mb-4">
     <div class="card-header py-3">
-        @can('add-member')
+{{--        @can('add-member')--}}
         <a href="{{route('new-member')}}"> <h6 class="m-0 font-weight-bold text-primary text-right">{{$add_title}} <span> <i class="fas fa-user-plus"></i> </span> </h6>   </a>
-        @endcan
+{{--        @endcan--}}
     </div>
     <div class="card-body">
         <div class="row">

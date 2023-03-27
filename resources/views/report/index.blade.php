@@ -40,9 +40,9 @@
 
                                         {{$stats['ordinary']}}
                                             <br>
-                                            @can('add-payment')
+{{--                                            @can('add-payment')--}}
                                             @livewire('export', ['type' => $types['member_type'][0], 'yosid'=>$types['yosid'][0],'underForty'=>$types['underForty'][0]])
-                                            @endcan
+{{--                                            @endcan--}}
                                         </div>
                                     </div>
 
@@ -61,9 +61,9 @@
                                         <div class="h5 mb-0 font-weight-bold text-gray-800">
                                             {{$stats['ecm']}}
                                             <br>
-                                            @can('add-payment')
+{{--                                            @can('add-payment')--}}
                                             @livewire('export', ['type' => $types['member_type'][1], 'yosid'=>$types['yosid'][0],'underForty'=>$types['underForty'][0]])
-                                            @endcan
+{{--                                            @endcan--}}
                                         </div>
                                     </div>
 
@@ -82,9 +82,9 @@
                                         <div class="h5 mb-0 font-weight-bold text-gray-800">
                                             {{$stats['yosid']}}
                                             <br>
-                                            @can('add-payment')
+{{--                                            @can('add-payment')--}}
                                             @livewire('export', ['type' => $types['member_type'][0], 'yosid'=>$types['yosid'][1],'underForty'=>$types['underForty'][0]])
-                                            @endcan
+{{--                                            @endcan--}}
                                         </div>
                                     </div>
 
@@ -103,9 +103,9 @@
                                         <div class="h5 mb-0 font-weight-bold text-gray-800">
                                             {{$stats['under40']}}
                                             <br>
-                                            @can('add-payment')
+{{--                                            @can('add-payment')--}}
                                             @livewire('export', ['type' => $types['member_type'][0], 'yosid'=>$types['yosid'][0],'underForty'=>$types['underForty'][1]])
-                                            @endcan
+{{--                                            @endcan--}}
                                         </div>
                                     </div>
 
@@ -126,9 +126,9 @@
                                             Situazione contabile soci
                                         </div>
                                         <div class="h5 mb-0 font-weight-bold text-gray-800">
-                                            @can('add-payment')
+{{--                                            @can('add-payment')--}}
                                                 @livewire('accountability')
-                                            @endcan
+{{--                                            @endcan--}}
                                         </div>
                                     </div>
 
@@ -146,9 +146,9 @@
                                         </div>
                                         <div class="h5 mb-0 font-weight-bold text-gray-800">
 
-                                            @can('add-payment')
+{{--                                            @can('add-payment')--}}
                                                 @livewire('export-auth')
-                                            @endcan
+{{--                                            @endcan--}}
                                         </div>
                                     </div>
 
@@ -166,9 +166,9 @@
                                         </div>
                                         <div class="h5 mb-0 font-weight-bold text-gray-800">
 
-                                            @can('add-payment')
+{{--                                            @can('add-payment')--}}
                                                 @livewire('export', ['type' => $types['member_type'][0], 'yosid'=>$types['yosid'][1],'underForty'=>$types['underForty'][0]])
-                                            @endcan
+{{--                                            @endcan--}}
                                         </div>
                                     </div>
 
@@ -186,9 +186,9 @@
                                         </div>
                                         <div class="h5 mb-0 font-weight-bold text-gray-800">
 
-                                            @can('add-payment')
+{{--                                            @can('add-payment')--}}
                                                 @livewire('export', ['type' => $types['member_type'][0], 'yosid'=>$types['yosid'][0],'underForty'=>$types['underForty'][1]])
-                                            @endcan
+{{--                                            @endcan--}}
                                         </div>
                                     </div>
 
@@ -210,9 +210,9 @@
                                         </div>
                                         <div class="h5 mb-0 font-weight-bold text-gray-800">
 
-                                            @can('add-payment')
+{{--                                            @can('add-payment')--}}
                                                 @livewire('export', ['type' => $types['member_type'][0], 'yosid'=>$types['yosid'][0],'underForty'=>$types['underForty'][0]])
-                                            @endcan
+{{--                                            @endcan--}}
                                         </div>
                                     </div>
 
@@ -230,9 +230,9 @@
                                         </div>
                                         <div class="h5 mb-0 font-weight-bold text-gray-800">
 
-                                            @can('add-payment')
+{{--                                            @can('add-payment')--}}
                                                 @livewire('export', ['type' => $types['member_type'][1], 'yosid'=>$types['yosid'][0],'underForty'=>$types['underForty'][0]])
-                                            @endcan
+{{--                                            @endcan--}}
                                         </div>
                                     </div>
 
@@ -250,9 +250,9 @@
                                         </div>
                                         <div class="h5 mb-0 font-weight-bold text-gray-800">
 
-                                            @can('add-payment')
+{{--                                            @can('add-payment')--}}
                                                 @livewire('export', ['type' => $types['member_type'][0], 'yosid'=>$types['yosid'][1],'underForty'=>$types['underForty'][0]])
-                                            @endcan
+{{--                                            @endcan--}}
                                         </div>
                                     </div>
 
@@ -270,9 +270,9 @@
                                         </div>
                                         <div class="h5 mb-0 font-weight-bold text-gray-800">
 
-                                            @can('add-payment')
+{{--                                            @can('add-payment')--}}
                                                 @livewire('export', ['type' => $types['member_type'][0], 'yosid'=>$types['yosid'][0],'underForty'=>$types['underForty'][1]])
-                                            @endcan
+{{--                                            @endcan--}}
                                         </div>
                                     </div>
 
@@ -294,9 +294,9 @@
                                         </div>
                                         <div class="h5 mb-0 font-weight-bold text-gray-800">
 
-                                            @can('add-payment')
+{{--                                            @can('add-payment')--}}
                                                 @livewire('export', ['type' => $types['member_type'][0], 'yosid'=>$types['yosid'][0],'underForty'=>$types['underForty'][0]])
-                                            @endcan
+{{--                                            @endcan--}}
                                         </div>
                                     </div>
 
@@ -314,9 +314,9 @@
                                         </div>
                                         <div class="h5 mb-0 font-weight-bold text-gray-800">
 
-                                            @can('add-payment')
+{{--                                            @can('add-payment')--}}
                                                 @livewire('export', ['type' => $types['member_type'][1], 'yosid'=>$types['yosid'][0],'underForty'=>$types['underForty'][0]])
-                                            @endcan
+{{--                                            @endcan--}}
                                         </div>
                                     </div>
 

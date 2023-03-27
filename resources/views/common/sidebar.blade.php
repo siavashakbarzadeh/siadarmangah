@@ -53,12 +53,12 @@
                 <!-- <h6 class="collapse-header">Custom Utilities:</h6>-->
                 <a class="collapse-item" href="{{route('payment-history')}}">Storico Pagamenti</a>
                 <a class="collapse-item" href="{{route('members-payment')}}">Registrazione pagamenti</a>
-                @can('open-year')
+{{--                @can('open-year')--}}
                 <a class="collapse-item" href="{{route('new-year-payments')}}">Apertura anno</a>
-                @endcan
-                @can('send-quota')
+{{--                @endcan--}}
+{{--                @can('send-quota')--}}
                 <a class="collapse-item" href="{{route('quota-list')}}">Invio quote</a>
-                @endcan
+{{--                @endcan--}}
             </div>
         </div>
     </li>
@@ -72,9 +72,9 @@
         <div id="collapseReports" class="collapse" aria-labelledby="headingUtilities"
              data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
-                @can('add-payment')
+{{--                @can('add-payment')--}}
                     <a class="collapse-item" href="{{route('dashboard')}}">Statistiche</a>
-                @endcan
+{{--                @endcan--}}
             </div>
         </div>
     </li>

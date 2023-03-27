@@ -54,14 +54,14 @@
                                         <td>{{$member->fiscal_code}}</td>
                                         <td>{{$member->email}}</td>
                                         <td>
-                                            @can('add-member')
+{{--                                            @can('add-member')--}}
                                             <form action="{{route('member-restore', $member->id)}}" method="post">@csrf <button type="submit" class="btn btn-success">Ripristina</button> </form>
-                                            @endcan
+{{--                                            @endcan--}}
                                         </td>
                                         <td>
-                                            @can('add-member')
+{{--                                            @can('add-member')--}}
                                             <form action="{{route('member-hard-delete', $member->id)}}" method="post">@csrf <button type="submit" class="btn btn-danger">Elimina definitivamente</button> </form>
-                                            @endcan
+{{--                                            @endcan--}}
                                         </td>
                                     </tr>
                                 @endforeach

@@ -21,9 +21,9 @@
                 <h1 class="h3 mb-2 text-gray-800">Sponsor</h1>
 <div class="card shadow mb-4">
     <div class="card-header py-3">
-        @can('add-company')
+{{--        @can('add-company')--}}
         <a href="{{route('company-new')}}"> <h6 class="m-0 font-weight-bold text-primary text-right">Aggiungi Sponsor <span> <i class="fas fa-user-plus"></i> </span> </h6>   </a>
-        @endcan
+{{--        @endcan--}}
     </div>
     <div class="card-body">
         <div class="row mt-3 mb-3">
@@ -43,18 +43,18 @@
                     <tr>
                         <td>{{$company->companyName}}</td>
                         <td class="text-center">
-                            @can('add-company')
+{{--                            @can('add-company')--}}
                             <a class="member-icons" href="{{route('company-detail', $company->id)}}"> <i class="fas fa-edit"> </i> </a>
-                            @endcan
+{{--                            @endcan--}}
                         </td>
                         <td>
-                            @can('add-company')
+{{--                            @can('add-company')--}}
                             <form method="post" action="{{route('company-delete', $company->id)}}">
                                 @csrf
                                 @method('DELETE')
                                 <button type="submit" id="red" class="member-icons no-button"> <i class="fas fa-trash-alt"></i> </button>
                             </form>
-                            @endcan
+{{--                            @endcan--}}
                         </td>
                     </tr>
                 @endforeach

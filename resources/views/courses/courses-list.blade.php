@@ -75,9 +75,9 @@
                                         <td>{{substr($course->end, 0 ,10)}}</td>
                                         <td>{{$course->course_credits}}</td>
                                         <td class="text-center">
-                                            @can('edit-course')
+{{--                                            @can('edit-course')--}}
                                             <a class="member-icons" href="{{route('course-detail-page', $course->id)}}"> <i class="fas fa-edit"> </i> </a>
-                                            @endcan
+{{--                                            @endcan--}}
                                         </td>
 
                                     </tr>

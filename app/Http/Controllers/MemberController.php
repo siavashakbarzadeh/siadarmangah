@@ -71,6 +71,7 @@ class MemberController extends Controller
 
     public function index(Request $request)
     {
+//        dd($request->all());
         $members = Member::join('positions', 'members.id', '=', 'positions.member_id')
             ->select('members.*', 'positions.member_type')
             ->where('positions.member_type', '<>', 'Partecipante ECM')
@@ -94,6 +95,7 @@ class MemberController extends Controller
 
     public function ecmMembers(Request $request)
     {
+
         $members = Member::join('positions', 'members.id', '=', 'positions.member_id')
             ->select('members.*', 'positions.member_type')
             ->where('positions.member_type', '=', 'Partecipante ECM')
@@ -576,7 +578,7 @@ class MemberController extends Controller
         $committess = Committee::all();
 
         $pdf = pdf::loadView('pdf.member-card', compact('member', 'studyGroups', 'committess','balance'))
-            ->setOptions(['defaultFont' => 'sans-serif', 'isRemoteEnabled' => true, 'isHtml5ParserEnabled' => true]);
+            ->setOptions(['defaultFont' => 'sans-serif', 'isRemoteEnabled' => true, 'isHtml5ParserEnabled' => true,]);
         //Check if folder exists
         $path = storage_path('app/public/attachments/'.(Carbon::now()->format('Y')));
         if(!File::isDirectory($path))
@@ -587,6 +589,31 @@ class MemberController extends Controller
         $pdf->save(storage_path('app/public/attachments/'.(Carbon::now()->format('Y')).'/scheda_' . $member->name . '_' .$member->surname. '.pdf'));
 
         return redirect('storage/attachments/'.(Carbon::now()->format('Y')).'/scheda_' . $member->name . '_' .$member->surname. '.pdf');
+    }
+    public function createBolletino($id)
+    {
+        $member = Member::findOrFail($id);
+//        dd($member);
+        //creates member bolletino
+        $quotas = $member->payments->sum('amount');
+        $paidAmount = $member->payments->sum('payed_amount');
+
+        $balance = $quotas - $paidAmount;
+        $studyGroups = StudyGroup::all();
+        $committess = Committee::all();
+
+        $pdf = pdf::loadView('pdf.member-payment', compact('member', 'studyGroups', 'committess','balance'))->setPaper('a4', 'landscape')
+            ->setOptions(['defaultFont' => 'sans-serif', 'isRemoteEnabled' => true, 'isHtml5ParserEnabled' => true]);
+        //Check if folder exists
+        $path = storage_path('app/public/attachments/'.(Carbon::now()->format('Y')));
+        if(!File::isDirectory($path))
+        {
+            File::makeDirectory($path,0777,true,true);
+        }
+
+        $pdf->save(storage_path('app/public/attachments/'.(Carbon::now()->format('Y')).'/bolletino_' . $member->name . '_' .$member->surname. '.pdf'));
+
+        return redirect('storage/attachments/'.(Carbon::now()->format('Y')).'/bolletino_' . $member->name . '_' .$member->surname. '.pdf');
     }
 
     public function deleteMember($id, FlasherInterface $flasher)

@@ -32,6 +32,7 @@ Route::get('/member/compile', [App\Http\Controllers\MemberController::class, 'co
 Route::put('/member/edit/{id}', [App\Http\Controllers\MemberController::class, 'editMember'])->middleware('auth')->name('edit-member');
 Route::get('/member/detail/{id}', [App\Http\Controllers\MemberController::class, 'memberDetail'])->middleware(['auth'])->name('member-detail');
 Route::get('/member/scheda/{id}', [App\Http\Controllers\MemberController::class, 'createScheda'])->middleware(['auth'])->name('member-scheda');
+Route::get('/member/bolletino/{id}', [App\Http\Controllers\MemberController::class, 'createBolletino'])->middleware(['auth'])->name('member-bolletino');
 Route::get('/member/delete/{id}', [App\Http\Controllers\MemberController::class, 'deleteMember'])->middleware(['auth'])->name('member-delete');
 Route::post('/member/hard-delete/{id}', [App\Http\Controllers\MemberController::class, 'hardDeleteMember'])->middleware(['auth'])->name('member-hard-delete');
 Route::post('/member/restore/{id}', [App\Http\Controllers\MemberController::class, 'restoreMember'])->middleware(['auth'])->name('member-restore');
@@ -68,6 +69,7 @@ Route::get('/receipt/delete/{id}', [App\Http\Controllers\ReceiptController::clas
 Route::get('/course/list', [App\Http\Controllers\CourseController::class, 'index'])->middleware(['auth'])->name('course-list');
 Route::get('/course/new', [App\Http\Controllers\CourseController::class, 'new'])->middleware(['auth'])->name('new-course');
 Route::post('/course/add', [App\Http\Controllers\CourseController::class, 'store'])->middleware(['auth'])->name('add-course');
+Route::post('/course/search', [App\Http\Controllers\CourseController::class, 'search'])->middleware(['auth'])->name('add-course');
 Route::put('/course/edit/{id}', [App\Http\Controllers\CourseController::class, 'edit'])->middleware(['auth'])->name('edit-course');
 Route::post('/course/sponsor/add', [App\Http\Controllers\CourseController::class, 'addSponsor'])->middleware(['auth'])->name('add-course-sponsor');
 Route::get('/course/detail/{id}', [App\Http\Controllers\CourseController::class, 'detail'])->middleware(['auth'])->name('course-detail');

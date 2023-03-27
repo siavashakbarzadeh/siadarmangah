@@ -49,10 +49,15 @@ class CourseController extends Controller
         'amount' => 'importo'
     ];
 
-    public function index()
+    public function index(Request $request)
     {
-        $courses = Course::orderBy('start', 'desc')->paginate(15);
-        return view('courses.courses-list', ['courses' => $courses]);
+        $courses = Course::orderBy('start', 'desc')
+
+            ->paginate(15);
+        return view('courses.courses-list', [
+            'courses' => $courses,
+//            'types'=>$types,
+        ]);
     }
 
     public function detailPage($id)
@@ -299,6 +304,16 @@ class CourseController extends Controller
         activity()->log(Auth::user()->name.' '.Auth::user()->surname.' ha rimosso il corso '.$course->course);
         $flasher->addSuccess('Corso eliminato', 'Operazione conclusa con successo');
         return redirect(route('course-list'));
+    }
+
+    public function search(Request $request)
+    {
+        $courses = Course::query()
+            ->when($request->filled('q'),function ($query)use ($request){
+                $query->where('course','LIKE','%'.$request->get('q').'%');
+            })->limit(20)
+            ->get();
+        return response()->json(['courses'=>$courses]);
     }
 
     public function deleteCertificate(Request $request, FlasherInterface $flasher)

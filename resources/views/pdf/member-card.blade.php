@@ -30,18 +30,18 @@
     }
     table {
         font-family: arial, sans-serif;
-        border-collapse: collapse;
+        /*border-collapse: collapse;*/
         width: 100%;
     }
 
     td, th {
-        border: 1px solid #dddddd;
+        /*border: 1px solid #dddddd;*/
         text-align: left;
-        padding: 8px;
+        /*padding: 8px;*/
     }
 
     tr:nth-child(even) {
-        background-color: #dddddd;
+        /*background-color: #dddddd;*/
     }
 
     .item3 { grid-area: main; }
@@ -66,7 +66,7 @@
 ">
     </div>
     <div style="border-left: solid 1px #B4B4B4;text-align:right;display:inline-block;margin-left: 30%;">
-        <p style="padding-left: 12px;text-align: center;font-size: 0.5em">Via Pisa, 21</p>
+        <p style="padding-left: 12px;text-align: center;font-size: 0.5em">Via Pisa, 21 </p>
         <p style="padding-left: 12px;text-align: center;font-size: 0.5em">00162 Roma</p>
         <br>
         <br>
@@ -79,107 +79,279 @@
     </div>
     <div style="border-left: solid 1px #B4B4B4;text-align:right;display:inline-block;margin-left: 5%;">
         <p style="padding-left: 12px;text-align: center;font-size: 0.5em">www.siditalia.it</p>
-        <p style="padding-left: 12px;text-align: center;font-size: 0.5em;color: white">00162 Roma</p>
+        <p style="padding-left: 12px;text-align: center;font-size: 0.5em;">00162 Roma</p>
         <br>
         <br>
     </div>
 </div>
 
-<h3 style="text-align: center; margin-top: 0px">Scheda Socio</h3>
+
 <div class="container">
-<div class="row">
-    <div class="col-xs-6">
-        <h5 style="text-align: left">{{$member->qualification ?? ''}} {{$member->surname ?? ''}} {{$member->name ?? ''}}</h5>
-        <p style="text-align: left">Nato/a il: <b>{{\Carbon\Carbon::parse($member->birth_date)->format('m-d-Y')}}</b></p>
-        <p style="text-align: left">Luogo nascita: <b>{{$member->county->city ?? ''}}</b></p>
-        <p style="text-align: left">C.fiscale: <b>{{$member->fiscal_code ?? ''}}</b></p>
-        <p style="margin-top: 7px;text-align: left" >Professione: <b>{{$member->position->profession->profession ?? ''}}</b></p>
-        <p style="text-align: left">Specializzazione: @foreach($member->disciplines as $discipline)<b>{{$discipline->discipline ?? ''}}</b>@endforeach</p>
-        <p style="text-align: left">E-mail: <b>{{$member->email ?? ''}}</b></p>
-        <p style="margin-top: 7px;text-align: left">Abitazione: <b>{{$member->residence->residence ?? ''}}</b></p>
-        <p style="text-align: left">Città: <b>{{$member->residence->city ?? ''}}</b></p>
-        <p style="text-align: left">Cellulare: <b>{{$member->residence->telephone1 ?? ''}}</b> </p>
-        <p style="margin-top: 7px;text-align: left">Ufficio: <b>{{$member->job->office ?? ''}}</b></p>
-        <p style="text-align: left">Indirizzo <b>{{$member->job->head_quarters ?? ''}}</b></p>
-        <p style="margin-top: 7px;text-align: left">Carica C.D. S.I.D: <b></b></p>
-        <p style="text-align: left">Carica C.D. regionale: <b></b> </p>
-        <h6>Iscritto a YoSid <input type="checkbox" {{$member->yo_sid ? 'checked':''}}></h6>
-        <p style="text-align: left">Appartenenza a Gruppi di studio</p>
-        <p style="text-align: left; margin-top: 115px">Appartenenza a Comitati</p>
+    <div style="width: 100%;text-transform: capitalize;font-size: 22px;text-align: center;font-weight: bold;">
+        scheda socio
     </div>
-    <div class="col-xs-6">
-        <h6>Cod.Scheda: <b>{{$member->id}}</b></h6>
-        <p>______________________________________________ *</p>
-        <p>______________________________________________ *</p>
-        <p>______________________________________________ *</p>
-        <p>______________________________________________ *</p>
-        <p>______________________________________________ *</p>
-        <p>______________________________________________ *</p>
-        <p>______________________________________________</p>
-        <p>______________________________________________</p>
-        <p>______________________________________________</p>
-        <p>______________________________________________</p>
-        <p>______________________________________________ *</p>
-        <p>______________________________________________</p>
-        <p>______________________________________________</p>
-        <p>Hai 40 anni non compiuti? Iscriviti a YoSid
-            <input type="checkbox" value="Si">
-            <label>Si</label>
-            <input type="checkbox" value="No"></p>
-            <label>No</label>
-        <p>Elenco Gruppi di studio</p>
-            @foreach($studyGroups as $studyGroup)
-                <li>{{$studyGroup->group}}</li>
-            @endforeach
+    <div style="width: 100%;text-transform: capitalize;font-size: 16px;font-weight: bold;">
+        <div style="width: 50%;text-align: left;margin-left: 0px;padding-left: 0px;">
+        {{$member->qualification ?? ''}} {{$member->surname ?? ''}} {{$member->name ?? ''}}
+        </div>
+        <div style="width: 50%;padding-right: 20px;float: right;margin-top: -30px;text-align: right;">
+            <span style="font-size: 14px;font-weight: normal;">Cod.Scheda:</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{$member->id}}
+        </div>
+    </div>
+    <div class="row">
+{{--<div class="col-xs-6 ">--}}
+{{--    <h5 style="text-align: left; font-size: 13px">{{$member->qualification ?? ''}} {{$member->surname ?? ''}} {{$member->name ?? ''}}</h5>--}}
+{{--</div>--}}
+{{--<div class="col-xs-6 ">--}}
+{{--    <div  style="text-align: right; padding-right: 150px;"><h6>Cod.Scheda: <span style="font-size: 15px">{{$member->id}}</span></h6></div>--}}
+{{--</div>--}}
+{{--    </div>--}}
+    <div class="row">
+        <div class="col-xs-12">
 
-        <p style="margin-top: 10px">Elenco Comitati</p>
-        @foreach($committess as $committee)
-            <li>{{$committee->committee}}</li>
-        @endforeach
-    </div>
-</div>
-    <div style="border-bottom: 1px solid black;">
-        <p style="text-align: left">Il saldo delle quote sociali è pari a - € {{$balance}}</p>
-    </div>
-    <p style="text-align: left">Il rinnovo della iscrizione è mediante:</p>
-    <div class="row">
-        <div class="col-xs-4">
-            <input type="checkbox"><p style="text-align: left">Bollettino di conto corrente postale n. 88043005(allegato)</p>
+            <table  class="" >
+{{--                <thead>--}}
+                <tr >
+                    <td  style="padding: 0px;width:13%;font-size: 11px;height: 10px;">Nato/a il:</td>
+                    <td scope="col" style="padding: 0px;width:40%;font-size: 11px;font-weight: bold;">{{\Carbon\Carbon::parse($member->birth_date)->format('m-d-Y')}}</td>
+                    <td style="width:15%;"></td>
+                    <td style="text-align: left;">
+                        --------------------------------------------------------------- <span style="font-size: 14px;margin-top: 6px;">*</span>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td  style="padding: 0px;width:13%;font-size: 11px;">Luogo nascita:</td>
+                    <td scope="col" style="padding: 0px;width:40%;font-size: 11px;font-weight: bold;">{{$member->county->city ?? ''}}</td>
+                    <td style="width:15%;"></td>
+                    <td style="text-align: left;">--------------------------------------------------------------- <span style="font-size: 14px;margin-top: 6px;">*</span></td>
+
+
+                </tr>
+                <tr>
+                    <td  style="padding: 0px;width:13%;font-size: 11px;">C.fiscale:</td>
+                    <td scope="col" style="padding: 0px;width:40%;font-size: 11px;font-weight: bold;">{{$member->fiscal_code ?? ''}}</td>
+                    <td style="width:15%;"></td>
+                    <td style="text-align: left;">--------------------------------------------------------------- <span style="font-size: 14px;margin-top: 6px;">*</span></td>
+
+
+                </tr>
+                <tr>
+                    <td  style="padding: 0px;width:13%;font-size: 11px;">Professione:</td>
+                    <td scope="col" style="padding: 0px;width:40%;font-size: 11px;font-weight: bold;">{{$member->position->profession->profession ?? ''}}</td>
+                    <td style="width:15%;"></td>
+                    <td style="text-align: left;">--------------------------------------------------------------- <span style="font-size: 14px;margin-top: 6px;">*</span></td>
+
+
+                </tr>
+                <tr>
+                    <td  style="padding: 0px;width:13%;font-size: 11px;">Specializzazione:</td>
+                    <td scope="col" style="padding: 0px;width:40%;font-size: 11px;font-weight: bold;">@foreach($member->disciplines as $discipline){{$discipline->discipline ?? ''}}@endforeach</td>
+                    <td style="width:15%;"></td>
+                    <td style="text-align: left;">--------------------------------------------------------------- <span style="font-size: 14px;margin-top: 6px;">*</span></td>
+
+
+                </tr>
+                <tr>
+                    <td  style="padding: 0px;width:13%;font-size: 11px;">E-mail:</td>
+                    <td scope="col" style="padding: 0px;width:40%;font-size: 11px;font-weight: bold;">{{$member->email ?? ''}}</td>
+                    <td style="width:15%;"></td>
+                    <td style="text-align: left;">--------------------------------------------------------------- <span style="font-size: 14px;margin-top: 6px;">*</span></td>
+
+
+                </tr>
+                <tr>
+                    <td  style="padding: 0px;width:13%;font-size: 11px;">Abitazione:</td>
+                    <td scope="col" style="padding: 0px;width:40%;font-size: 11px;font-weight: bold;">{{$member->residence->residence ?? ''}}</td>
+                    <td style="width:15%;"></td>
+                    <td style="text-align: left;">---------------------------------------------------------------</td>
+
+
+                </tr>
+                <tr>
+                    <td  style="padding: 0px;width:13%;font-size: 11px;">Città:</td>
+                    <td scope="col" style="padding: 0px;width:40%;font-size: 11px;font-weight: bold;">{{$member->residence->city ?? ''}}</td>
+                    <td style="width:15%;"></td>
+                    <td style="text-align: left;">---------------------------------------------------------------</td>
+
+
+                </tr>
+                <tr>
+                    <td  style="padding: 0px;width:13%;font-size: 11px;">Cellulare:</td>
+                    <td scope="col" style="padding: 0px;width:40%;font-size: 11px;font-weight: bold;">{{$member->residence->telephone1 ?? ''}}</td>
+                    <td style="width:15%;"></td>
+                    <td style="text-align: left;">--------------------------------------------------------------- </td>
+
+
+                </tr>
+
+                <tr>
+                    <td  style="padding: 0px;width:13%;font-size: 11px;">Ufficio:</td>
+                    <td scope="col" style="padding: 0px;width:40%;font-size: 11px;font-weight: bold;">{{$member->job->office ?? ''}}</td>
+                    <td style="width:15%;"></td>
+                    <td style="text-align: left;">--------------------------------------------------------------- <span style="font-size: 14px;margin-top: 6px;">*</span></td>
+
+
+                </tr>
+
+
+                <tr>
+                    <td  style="padding: 0px;width:13%;font-size: 11px;">Indirizzo</td>
+                    <td scope="col" style="padding: 0px;width:40%;font-size: 11px;font-weight: bold;">{{$member->job->head_quarters ?? ''}}</td>
+                    <td style="width:15%;"></td>
+                    <td style="text-align: left;">---------------------------------------------------------------</td>
+
+
+                </tr>
+
+
+                <tr>
+                    <td  style="padding: 0px;width:13%;font-size: 11px;">Città:</td>
+                    <td scope="col" style="padding: 0px;width:40%;font-size: 11px;font-weight: bold;">{{$member->job->head_quarters ?? ''}}</td>
+                    <td style="width:15%;"></td>
+                    <td style="text-align: left;">---------------------------------------------------------------</td>
+
+
+                </tr>
+
+
+
+
+
+
+{{--                </thead>--}}
+
+            </table>
+
+
+
+            <p style="margin-top: 2px;text-align: left;font-size: 11px;">Carica C.D. S.I.D: <b></b></p>
+            <p style="text-align: left;font-size: 11px;">Carica C.D. regionale: <b></b> </p>
+{{--            @dd($member->yo_sid)--}}
+            <div class="check" style="width: 100%;">
+                <span style="font-size: 13px; margin-right: 15px; font-weight: bolder;width:20%;">Iscritto a YoSid </span>
+                <input style="font-size: 14px; font-weight: bolder; display: inline-block; margin: -5px 5px; color: #1a1e21;width:20%;" type="checkbox" name="yo_sid" @if($member->yo_sid==0) checked @endif />
+                <span style="width:60%;font-size: 13px;font-weight: bolder;">Hai 40 anni non compiuti? Iscriviti a YoSid
+
+                    <label style="margin-left: 10px;margin-bottom:-3px;border: solid 1px black;width:20px;height: 10px;font-size: 13px;font-weight: bold;padding: 3px;text-align:center;line-height: 13px;">Si</label>
+                    <label style="margin-left: 10px;margin-bottom:-3px;border: solid 1px black;width:20px;height: 10px;font-size: 13px;font-weight: bold;padding: 3px;text-align:center;line-height: 13px;">No</label>
+
+                </span>
+
+            </div>
         </div>
     </div>
-    <div class="row">
-        <div class="col-xs-2">
-            <input type="checkbox"><p style="text-align: left">Carte di credito</p>
+{{--            ------------------------------------------}}
+            <div style="width: 100%;margin-top: 30px;margin-bottom: 20px;font-size: 10px;">
+                <div style="width:30%;margin-left: 70px;">
+                    Appartenenza a Gruppi di studio
+                </div>
+                <div style="float:right;width: 60%;margin-top: -30px;">
+                    <p style="text-align: center;">Elenco Gruppi di studio</p>
+                    @foreach($studyGroups as $studyGroup)
+                        <li style="margin-left: 80px;list-style-type: none;">
+                            {{$studyGroup->group}}
+
+                        </li>
+                        <span style="float: right;">[ ]</span>
+
+                    @endforeach
+
+
+                </div>
+
+            </div>
+{{--            ------------------------------}}
+
+{{--            -------------------------------------}}
+
+
+
+
+    <div style="width: 100%;margin-top: 160px;font-size: 10px;">
+        <div style="width:30%;margin-left: 80px;">
+            Appartenenza a Comitati
         </div>
-        <div class="col-xs-2">
-            <input type="checkbox"><p style="text-align: left">CartaSì</p>
+        <div style="float:right;width: 60%;margin-top: -13px;">
+            <p style="text-align: center;">Elenco Comitati
+            </p>
+            @foreach($committess as $committee)
+                <li style="margin-left: 80px;list-style-type: none;">{{$committee->committee}}</li>
+                <span style="float: right;">[ ]</span>
+            @endforeach
         </div>
-        <div class="col-xs-2">
-            <input type="checkbox"><p style="text-align: left">Visa</p>
-        </div>
-        <div class="col-xs-2">
-            <input type="checkbox"><p style="text-align: left">Mastercard</p>
-        </div>
-        <div class="col-xs-2">
-            <input type="checkbox"><p style="text-align: left">Eurocard</p>
-        </div>
+
     </div>
-    <div class="row">
-        <div class="col-xs-12">
-            <p style="text-align: left">Carta di credito n.ro: _________________________ Data di scadenza:___________________ Cod controllo: ________________</p>
+
+{{--        -----------------------------------------------}}
+        <div style="width: 70%;border-bottom:1px solid black;clear: both;margin-left: 80px;margin-top:1px;padding: 0px;">
+            <span style="font-size: 13px;">Il saldo delle quote sociali è paria €  &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="font-weight: bolder;">{{$balance}}</span>
+            </span>
         </div>
-    </div>
-    <div class="row">
-        <div class="col-xs-12">
-            <input type="checkbox"><p style="text-align: left">Bonifico bancario su c/c intestato SID <b>IBAN IT 51 H 03069 09606 1000000722289</b></p>
-        </div>
-    </div>
-    <p><b>Firma: __________________________________________</b></p>
-    <div style="border-bottom: solid 1px black">
-        <p style="text-align: center;padding-top: 10px"><b>Annotazioni: Controllare i dati ed apportare le eventuali variazioni negli appositi spazi sulla destra del modulo</b></p>
-    </div>
-    <p style="text-align: right;color: red">P.IVA 04394411005</p>
-</div>
+        <p style="font-size: 11px;">Il rinnovo della iscrizione è mediante:</p>
+        <p style="font-size: 11px;">[ ] &nbsp;&nbsp;&nbsp;Bollettino di conto corrente postale n. 88043005 (allegato)</p>
+        <p style="font-size: 11px;">[ ] &nbsp;&nbsp;&nbsp;Assegno bancario NON TRASFERIBILE intestato a S.I.D</p>
+
+        <p style="font-size: 11px;padding: 1px;">
+            <span style="margin-right: 30px;">[ ] &nbsp; Carta di credito:</span>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+            <span style="margin-right: 9px;">[ ] &nbsp;CartaSì</span>
+            <span style="margin-right: 9px;">[ ]&nbsp; Visa</span>
+            <span style="margin-right: 9px;">[ ] &nbsp;MasterCard </span>
+            <span style="margin-right: 9px;">[ ]&nbsp; Eurocard</span>
+
+        </p>
+
+        <p style="padding-left: 15px; font-size: 11px;">Carta di credito n.ro:_______________________ Data di scadenza: _______________________Cod controllo:_______________________</p>
+{{--         ] --}}
+        <p style="font-size: 11px;">[ ] &nbsp;Bonifico bancario su c/c intestato SID <span style="margin-left: 27px;font-weight: bolder;">IBAN IT 51 H 03069 09606 1000000722289</span></p>
+        <p style="margin-left: 60px;font-weight: bolder;font-size: 11px;">Firma:_____________________________________________________________</p>
+        <p style="text-align: center;font-size: 11px;border-bottom: solid 1px black;font-weight: bold;padding: 1px 30px;">Annotazioni: Controllare i dati ed apportare le eventuali variazioni negli appositi spazi sulla destra del modulo</p>
+        <span style="text-align: right;color: red;font-size: 11px;padding: 0px;float: right;margin-bottom: -30px;">P.IVA 04394411005</span>
+
+
+{{--    <div style="border-bottom: 1px solid black;">--}}
+{{--        <p style="text-align: left">Il saldo delle quote sociali è pari a - € {{$balance}}</p>--}}
+{{--    </div>--}}
+{{--    <p style="text-align: left">Il rinnovo della iscrizione è mediante:</p>--}}
+{{--    <div class="row">--}}
+{{--        <div class="col-xs-4">--}}
+{{--            <input type="checkbox"><p style="text-align: left">Bollettino di conto corrente postale n. 88043005(allegato)</p>--}}
+{{--        </div>--}}
+{{--    </div>--}}
+{{--    <div class="row">--}}
+{{--        <div class="col-xs-2">--}}
+{{--            <input type="checkbox"><p style="text-align: left">Carte di credito</p>--}}
+{{--        </div>--}}
+{{--        <div class="col-xs-2">--}}
+{{--            <input type="checkbox"><p style="text-align: left">CartaSì</p>--}}
+{{--        </div>--}}
+{{--        <div class="col-xs-2">--}}
+{{--            <input type="checkbox"><p style="text-align: left">Visa</p>--}}
+{{--        </div>--}}
+{{--        <div class="col-xs-2">--}}
+{{--            <input type="checkbox"><p style="text-align: left">Mastercard</p>--}}
+{{--        </div>--}}
+{{--        <div class="col-xs-2">--}}
+{{--            <input type="checkbox"><p style="text-align: left">Eurocard</p>--}}
+{{--        </div>--}}
+{{--    </div>--}}
+{{--    <div class="row">--}}
+{{--        <div class="col-xs-12">--}}
+{{--            <p style="text-align: left">Carta di credito n.ro: _________________________ Data di scadenza:___________________ Cod controllo: ________________</p>--}}
+{{--        </div>--}}
+{{--    </div>--}}
+{{--    <div class="row">--}}
+{{--        <div class="col-xs-12">--}}
+{{--            <input type="checkbox"><p style="text-align: left">Bonifico bancario su c/c intestato SID <b>IBAN IT 51 H 03069 09606 1000000722289</b></p>--}}
+{{--        </div>--}}
+{{--    </div>--}}
+{{--    <p><b>Firma: __________________________________________</b></p>--}}
+{{--    <div style="border-bottom: solid 1px black">--}}
+{{--        <p style="text-align: center;padding-top: 10px"><b>Annotazioni: Controllare i dati ed apportare le eventuali variazioni negli appositi spazi sulla destra del modulo</b></p>--}}
+{{--    </div>--}}
+{{--    <p style="text-align: right;color: red">P.IVA 04394411005</p>--}}
+{{--</div>--}}
+<div style="position: fixed;width:130px;height:20px;right:-60px;top:330px;transform: rotate(-270deg);direction: ltr;font-weight: bold;font-size: 10px;">(*) Campo obbligatorio</div>
 
 </body>
 </html>

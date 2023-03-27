@@ -8,9 +8,9 @@
         <div class="row">
             <div class="col-md-4">
 
-                    @can('add-payment')
+{{--                    @can('add-payment')--}}
                         @livewire('export', ['type' => $types['member_type'][0], 'yosid'=>$types['yosid'][0],'underForty'=>$types['underForty'][0]])
-                    @endcan
+{{--                    @endcan--}}
             </div>
         </div>
         <form method="get">
@@ -67,11 +67,11 @@
                         <td>{{$member->fiscal_code}}</td>
                         <td>{{$member->email}}</td>
                         <td class="text-center">
-                            @can('edit-member')
+{{--                            @can('edit-member')--}}
                             <a class="member-icons" href="{{route('member-detail', $member->id)}}"> <i class="fas fa-edit"> </i> </a>
                             <span> - </span>
                             <a id="red" class="member-icons" href="{{route('member-delete', $member->id)}}"> <i class="fas fa-trash-alt"></i> </a>
-                            @endcan
+{{--                            @endcan--}}
                         </td>
                     </tr>
                 @endforeach

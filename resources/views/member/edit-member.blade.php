@@ -26,6 +26,10 @@
                         <a href="{{route('member-scheda', $member->id)}}" class="d-none d-sm-inline-block btn btn-md btn-primary shadow-sm"><i
                                 class="fas fa-paperclip fa-lg text-white-50"></i>Apri scheda socio</a>
                     </div>
+                    <div class="col-md-3">
+                        <a href="{{route('member-bolletino', $member->id)}}" class="d-none d-sm-inline-block btn btn-md btn-primary shadow-sm"><i
+                                class="fas fa-paperclip fa-lg text-white-50"></i>GENERA BOLLETTINO</a>
+                    </div>
                 </div>
 
                 <form action="{{route('edit-member', $member->id)}}" method="post">

@@ -83,7 +83,9 @@
 {{--        40%--}}
                 <div style="width: 40%;height: 500px; float: left;border-right: solid 1px black;">
                     <p style="padding: 16px;">
-                        <img src="../../../public/img/euro.jpeg" alt="" style="width: 30px;height: 30px;">
+{{--                        <img src="../../../public/img/euro.jpeg" alt="" style="width: 30px;height: 30px;">--}}
+                        <span class="bg-dark" style="display: inline-block; background: black;width: 25px;height: 25px;color: white;
+                        padding: 5px;text-align: center;font-size: 25px;">€</span>
                         <span>sul C/C n. &nbsp;&nbsp;&nbsp;&nbsp; <b>88043005</b></span>
                         <span style="margin-left: 70px;">di Euro &nbsp;&nbsp;<b>10.00</b>  </span>
                         <p style="text-transform: uppercase;font-size: 9px;padding: 11px;margin-top: -10px">
@@ -131,9 +133,11 @@
 {{--        60%--}}
         <div style="width: 60%;height: 500px;float: left;">
             <p style="padding: 10px;">
-                <img src="../../../public/img/euro.jpeg" alt="" style="width: 30px;height: 30px;">
+{{--                <img src="../../../public/img/euro.jpeg" alt="" style="width: 30px;height: 30px;">--}}
+                <span class="bg-dark" style="display: inline-block; background: black;width: 25px;height: 25px;color: white;
+                        padding: 5px;text-align: center;font-size: 25px;">€</span>
                 <span>sul C/C n. &nbsp;&nbsp;&nbsp;&nbsp; <b>88043005</b></span>
-                <span style="margin-left: 120px;">di Euro &nbsp;&nbsp;&nbsp;&nbsp;<b>10.00</b> </span>
+                <span style="margin-left: 120px;">di Euro &nbsp;&nbsp;&nbsp;&nbsp;<b>{{$member->member_payments->amount ?? ''}}</b> </span>
             </p>
             <p style="text-transform: uppercase;font-size: 9px;padding: 11px;">
                 <b style="font-weight: bolder;font-size: 14px;">TD &nbsp;123 </b>

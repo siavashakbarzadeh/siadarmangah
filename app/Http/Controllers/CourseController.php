@@ -324,7 +324,7 @@ class CourseController extends Controller
             $flasher->addError('L\'Attestato non è stato eliminato', 'Ops, si è verificato un errore');
             return redirect(route('course-detail-page'))->withInput();
         }
-
+//
         File::delete(storage_path(env('DOWNLOAD_URL').'certificates/'.$frequency->course_id.'/attestato_'.$frequency->member->surname.'.pdf'));
         activity()->log(Auth::user()->name.' '.Auth::user()->surname.' ha eliminato l\'attestato');
         $flasher->addSuccess('Attestato eliminato', 'Operazione conclusa con successo');

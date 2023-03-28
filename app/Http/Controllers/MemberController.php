@@ -599,6 +599,8 @@ class MemberController extends Controller
         $paidAmount = $member->payments->sum('payed_amount');
 
         $balance = $quotas - $paidAmount;
+//        $round=round($balance);
+//        dd($balance);
         $studyGroups = StudyGroup::all();
         $committess = Committee::all();
 

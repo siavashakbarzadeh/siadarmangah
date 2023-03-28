@@ -87,7 +87,7 @@
                         <span class="bg-dark" style="display: inline-block; background: black;width: 25px;height: 25px;color: white;
                         padding: 5px;text-align: center;font-size: 25px;">€</span>
                         <span>sul C/C n. &nbsp;&nbsp;&nbsp;&nbsp; <b>88043005</b></span>
-                        <span style="margin-left: 70px;">di Euro &nbsp;&nbsp;<b>10.00</b>  </span>
+                        <span style="margin-left: 70px;">di Euro &nbsp;&nbsp;<b>{{ round($balance) ?? ''}}</b>  </span>
                         <p style="text-transform: uppercase;font-size: 9px;padding: 11px;margin-top: -10px">
                         importo in lettere: _________________________________________________
                         </p>
@@ -137,7 +137,7 @@
                 <span class="bg-dark" style="display: inline-block; background: black;width: 25px;height: 25px;color: white;
                         padding: 5px;text-align: center;font-size: 25px;">€</span>
                 <span>sul C/C n. &nbsp;&nbsp;&nbsp;&nbsp; <b>88043005</b></span>
-                <span style="margin-left: 120px;">di Euro &nbsp;&nbsp;&nbsp;&nbsp;<b>{{$member->member_payments->amount ?? ''}}</b> </span>
+                <span style="margin-left: 120px;">di Euro &nbsp;&nbsp;&nbsp;&nbsp;<b>{{ round($balance) ?? ''}}</b> </span>
             </p>
             <p style="text-transform: uppercase;font-size: 9px;padding: 11px;">
                 <b style="font-weight: bolder;font-size: 14px;">TD &nbsp;123 </b>

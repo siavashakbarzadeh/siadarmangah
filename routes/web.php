@@ -123,6 +123,7 @@ Route::post('/region/delete/', [App\Http\Controllers\RegionController::class, 'd
 
 //SETTINGS ROUTES
 Route::get('/settings/', [App\Http\Controllers\SettingsController::class, 'index'])->middleware(['auth'])->name('settings');
+Route::get('/settings/adduser', [App\Http\Controllers\SettingsController::class, 'adduser'])->middleware(['auth'])->name('add-user');
 Route::get('/settings/smtp', [App\Http\Controllers\SettingsController::class, 'smtp'])->middleware(['auth'])->name('smtp');
 
 //EMAIL ROUTES

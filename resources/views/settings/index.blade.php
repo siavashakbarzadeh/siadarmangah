@@ -157,25 +157,29 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-lg-3 col-md-3 mb-4">
-                        <div class="card shadow mb-4">
-                            <div class="card-header py-3">
-                                <h6 class="m-0 font-weight-bold text-primary">Aggiungi un nuovo utente</h6>
-                            </div>
-                            <div class="card-body">
-                                <label>Nome</label>
-                                <input type="text" class="form-control" id="user_name"/>
-                                <label>Cognome</label>
-                                <input type="text" class="form-control" id="user_surname"/>
-                                <label>Email</label>
-                                <input type="email" class="form-control" id="user_email"/>
-                                <label>Password</label>
-                                <input type="text" class="form-control" value="{{uniqid()}}" id="user_password"/>
+                    <form action="{{route('add-user')}}" method="POST">
+                        @csrf
+{{--                        <div class="col-lg-3 col-md-3 mb-4">--}}
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">Aggiungi un nuovo utente</h6>
+                                </div>
+                                <div class="card-body">
+                                    <label>Nome</label>
+                                    <input type="text" class="form-control" id="user_name"/>
+                                    <label>Cognome</label>
+                                    <input type="text" class="form-control" id="user_surname"/>
+                                    <label>Email</label>
+                                    <input type="email" class="form-control" id="user_email"/>
+                                    <label>Password</label>
+                                    <input type="text" class="form-control" value="{{uniqid()}}" id="user_password"/>
 
-                                <button id="add_user" class="btn btn-sm btn-primary mb-2 mt-2">Aggiungi</button>
+                                    <button id="add_user" class="btn btn-sm btn-primary mb-2 mt-2">Aggiungi</button>
+                                </div>
                             </div>
-                        </div>
-                    </div>
+{{--                        </div>--}}
+                    </form>
+
                 </div>
 
 </div>

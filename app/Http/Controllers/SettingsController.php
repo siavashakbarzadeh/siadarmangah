@@ -7,6 +7,7 @@ use App\Models\Region;
 use App\Models\StudyGroup;
 use App\Models\User;
 use App\Permissions\Permission;
+use Flasher\Prime\FlasherInterface;
 use Illuminate\Http\Request;
 use Spatie\Permission\Models\Role;
 
@@ -46,5 +47,12 @@ class SettingsController extends Controller
             'port' => $port,
             'encryption' => $encryption
         ]);
+    }
+    public function adduser (Request $request, FlasherInterface $flasher)
+    {
+
+        dd($request->all());
+        $user = new User();
+
     }
 }

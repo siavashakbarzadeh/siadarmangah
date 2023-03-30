@@ -155,7 +155,7 @@
                 <p style="font-size: 14px;padding: 2px 100px;text-transform: none;border-bottom: solid 1px black;">pagamento quota/e associativale</p>
             </fieldset>
             <div style="height:90px;width: 30%;margin-left: 10px;float: left;padding-top:30px;text-align: center;">
-            &nbsp;<b style="font-size: 20px;">{{$member->id}}</b>
+            &nbsp;<b style="font-size: 20px;"></b>
             </div>
 {{--            65%--}}
             <div style="height:auto;width: 65%;float: right;">

@@ -157,7 +157,7 @@
                 </div>
 
                 <div class="row">
-                    <form action="{{route('add-user')}}" method="POST">
+                    <form action="{{route('user-add')}}" method="POST">
                         @csrf
 {{--                        <div class="col-lg-3 col-md-3 mb-4">--}}
                             <div class="card shadow mb-4">
@@ -166,15 +166,16 @@
                                 </div>
                                 <div class="card-body">
                                     <label>Nome</label>
-                                    <input type="text" class="form-control" id="user_name"/>
+                                    <input type="text" class="form-control" id="user_name" name="name"/>
                                     <label>Cognome</label>
-                                    <input type="text" class="form-control" id="user_surname"/>
+                                    <input type="text" class="form-control" id="user_surname" name="surname"/>
                                     <label>Email</label>
-                                    <input type="email" class="form-control" id="user_email"/>
+                                    <input type="email" class="form-control" id="user_email" name="email"/>
                                     <label>Password</label>
-                                    <input type="text" class="form-control" value="{{uniqid()}}" id="user_password"/>
+                                    <input type="text" class="form-control" value="{{uniqid()}}" id="user_password" name="password"/>
 
-                                    <button id="add_user" class="btn btn-sm btn-primary mb-2 mt-2">Aggiungi</button>
+                                    <button  class="btn btn-sm btn-primary mb-2 mt-2">Aggiungi</button>
+{{--                                    <button id="add_user" class="btn btn-sm btn-primary mb-2 mt-2">Aggiungi</button>--}}
                                 </div>
                             </div>
 {{--                        </div>--}}

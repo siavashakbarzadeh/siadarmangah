@@ -341,6 +341,7 @@ class CourseController extends Controller
 
     public function certificate($id, FlasherInterface $flasher)
     {
+//        dd('ok');
         $base64Sign = "";
         $course = Course::find($id);
         $sign = Sign::where('course_id', $course->id)

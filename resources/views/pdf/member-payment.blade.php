@@ -89,7 +89,7 @@
                         <span>sul C/C n. &nbsp;&nbsp;&nbsp;&nbsp; <b>88043005</b></span>
                         <span style="margin-left: 70px;">di Euro &nbsp;&nbsp;<b>{{ round($balance) ?? ''}}</b>  </span>
                         <p style="text-transform: uppercase;font-size: 9px;padding: 11px;margin-top: -10px">
-                        importo in lettere: _________________________________________________
+                        importo in lettere: <b style="padding-left: 10px;font-size: 11px;">{{ $converted ?? ''}}</b>
                         </p>
 
                         <fieldset style="border: solid 1px black;padding: 10px;margin:0px 10px;border-radius: 5px;max-height: 50px;">
@@ -118,7 +118,7 @@
                     <div style="margin:-13px 0px;padding: 4px;clear: both;font-weight: bold;height:20px;width: 96%;"  >
                     <span style="width: 100%;font-size: 8px;text-transform: uppercase;margin-right: 30px;list-style-type: none;font-weight: bold;text-align: right;">
 
-                    <li style="margin-top: -12px;">bollo dell'ufficio postale</li>
+                    <li style="margin-top: -20px;">bollo dell'ufficio postale</li>
 
 
                     </span>
@@ -126,7 +126,7 @@
 
 
 {{--                    enteha--}}
-                    <div style="width: 100%;height:60px;border-right: solid 1px black;border-left: solid 1px black;border-bottom: solid 1px black;margin-top: 60px;">
+                    <div style="width: 100%;height:60px;border-right: solid 1px black;border-left: solid 1px black;border-bottom: solid 1px black;margin-top: 51px;">
 
                     </div>
                  </div>
@@ -141,16 +141,16 @@
             </p>
             <p style="text-transform: uppercase;font-size: 9px;padding: 11px;">
                 <b style="font-weight: bolder;font-size: 14px;">TD &nbsp;123 </b>
-                &nbsp;&nbsp;&nbsp;&nbsp;importo in lettere: __________________________________________________
+                &nbsp;&nbsp;&nbsp;&nbsp;importo in lettere: <b style="padding-left: 10px;font-size: 11px;">{{ $converted ?? ''}}</b>
             </p>
-            <fieldset style="border: solid 1px black;padding: 10px;margin:-7px 25px;border-radius: 5px;max-height: 50px;">
+            <fieldset style="border: solid 1px black;padding: 10px;margin:-2px 25px;border-radius: 5px;max-height: 50px;">
             <legend style="text-transform: uppercase;font-size: 9px;width: auto;"><b style="text-transform: uppercase;border: none;">intestato a</b></legend>
             <p style="font-weight: bold;font-size: 16px;padding: 2px 50px;text-transform: uppercase;font-weight: bolder;border-bottom: solid 1px black;">
                 società italiana di diabetologia
             </p>
 
             </fieldset>
-            <fieldset style="border: solid 1px black;padding: 10px;margin:18px 25px;border-radius: 5px;max-height: 30px;">
+            <fieldset style="border: solid 1px black;padding: 10px;margin:10px 25px;border-radius: 5px;max-height: 30px;">
                 <legend style="text-transform: uppercase;font-size: 9px;width: auto;"><b style="text-transform: uppercase;border: none;">causale</b></legend>
                 <p style="font-size: 14px;padding: 2px 100px;text-transform: none;border-bottom: solid 1px black;">pagamento quota/e associativale</p>
             </fieldset>
@@ -159,14 +159,14 @@
             </div>
 {{--            65%--}}
             <div style="height:auto;width: 65%;float: right;">
-                <fieldset style="border: solid 1px black;padding: 10px;margin:-7px 25px;border-radius: 5px;max-height: 50px;">
+                <fieldset style="border: solid 1px black;padding: 10px;margin:-4px 25px;border-radius: 5px;max-height: 50px;">
                     <legend style="text-transform: uppercase;font-size: 9px;width: auto;"><b style="text-transform: uppercase;border: none;">eseguito da</b></legend>
                     <p style="font-weight: bold;font-size: 14px;padding: 2px 50px;text-transform: uppercase;font-weight: bolder;border-bottom: solid 1px black;">
                         {{$member->surname ?? ''}} {{$member->name ?? ''}}
                     </p>
 
                 </fieldset>
-                <fieldset style="border: solid 1px black;padding:0px 10px;margin: 20px 25px;border-radius: 5px;max-height: 50px;">
+                <fieldset style="border: solid 1px black;padding:0px 10px;margin: 16px 25px;border-radius: 5px;max-height: 50px;">
                     <legend style="text-transform: uppercase;font-size: 9px;width: auto;"><b style="text-transform: uppercase;border: none;">via-piazza</b></legend>
                     <p style="font-weight: 200;font-size: 11px;padding: 2px 50px;text-transform: uppercase;font-weight: bolder;">
                         {{$member->residence->residence ?? ''}}
@@ -174,16 +174,16 @@
 
                 </fieldset>
                 <div  style="padding:0px;margin: 20px 25px;max-height: 50px;width: 89%;">
-                    <fieldset style="border: solid 1px black;padding:4px 0px;margin: 20px 0px;border-radius: 5px;max-height: 25px;width: 30%;">
+                    <fieldset style="border: solid 1px black;padding:4px 0px;margin: -10px 0px;border-radius: 5px;max-height: 25px;width: 30%;">
                         <legend style="text-transform: uppercase;font-size: 9px;width: auto;"><b style="text-transform: uppercase;border: none;">cap</b></legend>
                         <p style="font-weight: 200;font-size: 11px;padding: 2px 50px;text-transform: uppercase;">
                             {{$member->residence->cap ?? ''}}
                         </p>
 
                     </fieldset>
-                    <fieldset style="border: solid 1px black;padding:4px 0px;margin: -55px 10px;border-radius: 5px;max-height: 25px;width: 60%;float: right">
+                    <fieldset style="border: solid 1px black;padding:4px 0px;margin: -25px 10px;border-radius: 5px;max-height: 25px;width: 60%;float: right">
                         <legend style="text-transform: uppercase;font-size: 9px;width: auto;"><b style="text-transform: uppercase;border: none;">localita</b></legend>
-                        <p style="font-weight: 200;font-size: 11px;padding: 2px 50px;text-transform: uppercase;">
+                        <p style="font-weight: 200;font-size: 11px;padding: 2px 20px;text-transform: uppercase;">
                             {{$member->residence->city ?? ''}}
                         </p>
 

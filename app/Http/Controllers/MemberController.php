@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 
+use App\Custom\NumberToLetterConverter;
 use App\Exports\MembersExport;
 use App\Jobs\AddQuotas;
 use App\Jobs\StatisticsExport;
@@ -599,12 +600,17 @@ class MemberController extends Controller
         $paidAmount = $member->payments->sum('payed_amount');
 
         $balance = $quotas - $paidAmount;
+
+        $converter = new NumberToLetterConverter();
+        $converted = $converter->to_word(round($balance),"EUR");
+//        dd($converted);
+//        return strval($converted);
 //        $round=round($balance);
 //        dd($balance);
         $studyGroups = StudyGroup::all();
         $committess = Committee::all();
 
-        $pdf = pdf::loadView('pdf.member-payment', compact('member', 'studyGroups', 'committess','balance'))->setPaper('a4', 'landscape')
+        $pdf = pdf::loadView('pdf.member-payment', compact('member', 'studyGroups', 'committess','balance','converted'))->setPaper('a4', 'landscape')
             ->setOptions(['defaultFont' => 'sans-serif', 'isRemoteEnabled' => true, 'isHtml5ParserEnabled' => true]);
         //Check if folder exists
         $path = storage_path('app/public/attachments/'.(Carbon::now()->format('Y')));

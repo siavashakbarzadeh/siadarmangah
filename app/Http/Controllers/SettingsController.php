@@ -9,6 +9,7 @@ use App\Models\User;
 use App\Permissions\Permission;
 use Flasher\Prime\FlasherInterface;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
 use Spatie\Permission\Models\Role;
 
 class SettingsController extends Controller
@@ -51,8 +52,14 @@ class SettingsController extends Controller
     public function adduser (Request $request, FlasherInterface $flasher)
     {
 
-        dd($request->all());
-        $user = new User();
+//        dd($request->all());
+        $user = User::create([
+            'name' => $request->name,
+            'surname' => $request->surname,
+            'email' => $request->email,
+            'password' => Hash::make($request->password),
+        ]);
+        return redirect('settings');
 
     }
 }

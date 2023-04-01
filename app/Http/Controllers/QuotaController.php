@@ -111,7 +111,8 @@ class QuotaController extends Controller
 
                     $pdf->save(storage_path('app/public/attachments/'.(Carbon::now()->format('Y')).'/privacy_' . $member->name . '_' .$member->surname. '.pdf'));
                     //
-                }else{
+                }else if (Storage::disk('public')->exists('attachments/'.(Carbon::now()->format('Y')).'/privacy_'. $member->name . '_' .$member->surname. '.pdf')){
+
                     $privacyPath = 'attachments/'.(Carbon::now()->format('Y')).'/privacy_'. $member->name . '_' .$member->surname. '.pdf';
                 }
 

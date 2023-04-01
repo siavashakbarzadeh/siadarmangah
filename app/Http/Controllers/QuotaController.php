@@ -69,7 +69,7 @@ class QuotaController extends Controller
         ]);
     }
 
-    public function send($request, FlasherInterface $flasher)
+    public function send(\Illuminate\Http\Request $request, FlasherInterface $flasher)
     {
         dd($request->all());
         $validator = Validator::make($request->all(),[

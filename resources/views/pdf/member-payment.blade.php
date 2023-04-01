@@ -83,7 +83,7 @@
 {{--        40%--}}
                 <div style="width: 40%;height: 500px; float: left;border-right: solid 1px black;">
                     <p style="padding: 16px;">
-{{--                        <img src="../../../public/img/euro.jpeg" alt="" style="width: 30px;height: 30px;">--}}
+
                         <span class="bg-dark" style="display: inline-block; background: black;width: 25px;height: 25px;color: white;
                         padding: 5px;text-align: center;font-size: 25px;">€</span>
                         <span>sul C/C n. &nbsp;&nbsp;&nbsp;&nbsp; <b>88043005</b></span>
@@ -114,7 +114,7 @@
                     </fieldset>
 
                     </p>
-{{--                    insert here--}}
+
                     <div style="margin:-13px 0px;padding: 4px;clear: both;font-weight: bold;height:20px;width: 96%;"  >
                     <span style="width: 100%;font-size: 8px;text-transform: uppercase;margin-right: 30px;list-style-type: none;font-weight: bold;text-align: right;">
 
@@ -125,12 +125,12 @@
                     </div>
 
 
-{{--                    enteha--}}
+
                     <div style="width: 100%;height:60px;border-right: solid 1px black;border-left: solid 1px black;border-bottom: solid 1px black;margin-top: 51px;">
 
                     </div>
                  </div>
-{{--        60%--}}
+
         <div style="width: 60%;height: 500px;float: left;">
             <p style="padding: 10px;">
 {{--                <img src="../../../public/img/euro.jpeg" alt="" style="width: 30px;height: 30px;">--}}
@@ -157,7 +157,7 @@
             <div style="height:90px;width: 30%;margin-left: 10px;float: left;padding-top:30px;text-align: center;">
             &nbsp;<b style="font-size: 20px;"></b>
             </div>
-{{--            65%--}}
+
             <div style="height:auto;width: 65%;float: right;">
                 <fieldset style="border: solid 1px black;padding: 10px;margin:-4px 25px;border-radius: 5px;max-height: 50px;">
                     <legend style="text-transform: uppercase;font-size: 9px;width: auto;"><b style="text-transform: uppercase;border: none;">eseguito da</b></legend>
@@ -190,7 +190,7 @@
                     </fieldset>
                 </div>
             </div>
-{{--            khate nahaie--}}
+
             <div style="margin:-53px 0px 0px; ;padding: -30px 4px 0px;clear: both;font-weight: bold;height:20px;width: 100%;"  >
                 <span style="width: 40%;font-size: 8px;text-transform: uppercase;padding-left: 10px;list-style-type: none;font-weight: bold;">
 
@@ -213,92 +213,6 @@
     <div style="position: fixed;top: 345px;right: -78px;width: 230px;height: 20px;transform: rotate(-90deg);font-size: 7px;">
         Mod CH 8 ter-Mod12409A-ed1/10-EP1902/EP1903-St.[3]
     </div>
-                    {{--    <div class="row">--}}
-{{--
-{{--        <div style="width: 60%;min-height: auto;float: left;border: solid 1px red; background: #1cc88a ">--}}
-{{--
-
-{{--                <fieldset style="border: solid 1px black;padding: 10px;margin:-7px 10px;border-radius: 5px;max-height: 50px;">--}}
-{{--                    <legend style="text-transform: uppercase;font-size: 9px;width: auto;"><b style="text-transform: uppercase;border: none;">intestato a</b></legend>--}}
-{{--                    <p style="font-weight: bold;font-size: 16px;padding: 2px 50px;text-transform: uppercase;font-weight: bolder;border-bottom: solid 1px black;">--}}
-{{--                        società italiana di diabetologia--}}
-{{--                    </p>--}}
-
-{{--                </fieldset>--}}
-{{--                <fieldset style="border: solid 1px black;padding: 10px;margin:18px 10px;border-radius: 5px;max-height: 30px;">--}}
-{{--                    <legend style="text-transform: uppercase;font-size: 9px;width: auto;"><b style="text-transform: uppercase;border: none;">causale</b></legend>--}}
-{{--                    <p style="font-size: 14px;padding: 2px 100px;text-transform: none;border-bottom: solid 1px black;">pagamento quota/e associativale</p>--}}
-{{--                </fieldset>--}}
-{{--                <div style="height:90px;width: 30%;margin-left: 10px;float: left;padding-top:30px;text-align: center;">--}}
-{{--                    &nbsp;<b style="font-size: 20px;">{{$member->id}}</b>--}}
-{{--                </div>--}}
-
-{{--        </div>--}}
-{{--    </div>--}}
-
-{{--                    <br>--}}
-
-
-
-{{--                </div>--}}
-{{--            <p style="padding-left: 50px; padding-left:20px;margin: -10px 0px 0px 10px;width:93%;clear: both;height: auto;border: solid 1px yellow;">--}}
-{{--            <div style="text-transform: uppercase;font-size: 8px;font-weight: bold;width: 30%;float: left;margin-top: 2px;padding-left: 10px; ">--}}
-{{--                <span style="margin-bottom: 2px;list-style-type: none;">bollo dell'ufficio postale</span><br/>--}}
-{{--                <span style="font-size: 7px;font-weight: bold;list-style-type: none;margin-left: 20px;">codice bancoposta</span>--}}
-{{--            </div>--}}
-{{--            <div style="text-transform: uppercase;font-size: 8px;font-weight: bold;float: right;width: 70%">--}}
-{{--                <span style="margin-bottom: 2px;list-style-type: none;font-size: 11px;">importante: non scrivere nella  zona sottostante</span><br/>--}}
-{{--                <span style="font-size: 7px;font-weight: bold;list-style-type: none;margin-left: 20px;display: inline-block;padding-left: 46px;">   &nbsp;&nbsp;<span style="padding-left:50px;">importo in euro</span> &nbsp;&nbsp;numero conto &nbsp;&nbsp;tipo documento</span>--}}
-{{--            </div>--}}
-{{--            </p>--}}
-
-
-
-
-
-
-
-
-
 </div>
-
-
-
-{{--<table style="margin: 300px 10px 10px;">--}}
-{{--    <tr style="border: 1px solid black">--}}
-{{--        <td style="width: 50% ;border: 1px solid black"><span style="text-transform: uppercase;font-weight: 800;font-size: 10px;text-align: left;">conti correnti postali</span>.ricevuta di versamento banco posta</td>--}}
-{{--        <td style="width: 50%;text-align: right;font-size: 8px;padding-left: 60px;"> banco <span style="font-weight: bolder;">posta</span> </td>--}}
-{{--    </tr>--}}
-{{--    <tr style="border: 1px solid black">--}}
-{{--        <td style="width: 50% ;border: 1px solid red">--}}
-{{--            <div class="bg-success">sul c/c n. 88043005</div>--}}
-{{--            <div class="bg-success">di Euro 10.00</div>--}}
-{{--            <div class="bg-danger">importo in lettere</div>--}}
-{{--            <div class="bg-danger">intestato a</div>--}}
-{{--            <div class="bg-success">società italiana di diabetologia</div>--}}
-{{--            <div class="bg-danger">causale:</div>--}}
-{{--            <div class="bg-success">eseguto da:{{$member->surname ?? ''}} {{$member->name ?? ''}}</div>--}}
-{{--            <div class="bg-success">via-piazza:{{$member->residence->residence ?? ''}}</div>--}}
-{{--            <div class="bg-success">Cap:{{$member->residence->cap ?? ''}}</div>--}}
-{{--            <div class="bg-success">localita:{{$member->residence->city ?? ''}}</div>--}}
-{{--            conti correnti postali.ricevuta di versamento banco posta--}}
-{{--        </td>--}}
-{{--        <td style="width: 50%; height: 180px">--}}
-{{--            <div class="bg-danger">sul c/c n. 88043005</div>--}}
-{{--            <div class="bg-success">di Euro 10.00</div>--}}
-{{--            conti correnti postali.ricevuta di versamento banco posta--}}
-{{--        </td>--}}
-{{--    </tr>--}}
-{{--    <tr style="border: 1px solid black;">--}}
-{{--        <td style="width: 50% ;border: 1px solid black"></td>--}}
-{{--        <td style="width: 50%; text-align: right; height: 80px">123></td>--}}
-{{--    </tr>--}}
-{{--</table>--}}
-{{--<div class="card">--}}
-{{--    dgsgsdf--}}
-{{--</div>--}}
-
-
-
 </body>
 </html>

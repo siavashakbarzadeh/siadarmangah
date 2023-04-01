@@ -30,18 +30,18 @@
     }
     table {
         font-family: arial, sans-serif;
-        /*border-collapse: collapse;*/
+
         width: 100%;
     }
 
     td, th {
-        /*border: 1px solid #dddddd;*/
+
         text-align: left;
         /*padding: 8px;*/
     }
 
     tr:nth-child(even) {
-        /*background-color: #dddddd;*/
+
     }
 
     .item3 { grid-area: main; }
@@ -99,18 +99,12 @@
         </div>
     </div>
     <div class="row">
-{{--<div class="col-xs-6 ">--}}
-{{--    <h5 style="text-align: left; font-size: 13px">{{$member->qualification ?? ''}} {{$member->surname ?? ''}} {{$member->name ?? ''}}</h5>--}}
-{{--</div>--}}
-{{--<div class="col-xs-6 ">--}}
-{{--    <div  style="text-align: right; padding-right: 150px;"><h6>Cod.Scheda: <span style="font-size: 15px">{{$member->id}}</span></h6></div>--}}
-{{--</div>--}}
-{{--    </div>--}}
+
     <div class="row">
         <div class="col-xs-12">
 
             <table  class="" >
-{{--                <thead>--}}
+
                 <tr >
                     <td  style="padding: 0px;width:13%;font-size: 11px;height: 10px;">Nato/a il:</td>
                     <td scope="col" style="padding: 0px;width:40%;font-size: 11px;font-weight: bold;">{{\Carbon\Carbon::parse($member->birth_date)->format('m-d-Y')}}</td>
@@ -219,7 +213,7 @@
 
 
 
-{{--                </thead>--}}
+
 
             </table>
 
@@ -227,7 +221,7 @@
 
             <p style="margin-top: 2px;text-align: left;font-size: 11px;">Carica C.D. S.I.D: <b></b></p>
             <p style="text-align: left;font-size: 11px;">Carica C.D. regionale: <b></b> </p>
-{{--            @dd($member->yo_sid)--}}
+
             <div class="check" style="width: 100%;">
                 <span style="font-size: 13px; margin-right: 15px; font-weight: bolder;width:20%;">Iscritto a YoSid </span>
                 <input style="font-size: 14px; font-weight: bolder; display: inline-block; margin: -5px 5px; color: #1a1e21;width:20%;" type="checkbox" name="yo_sid" @if($member->yo_sid==0) checked @endif />
@@ -241,7 +235,7 @@
             </div>
         </div>
     </div>
-{{--            ------------------------------------------}}
+
             <div style="width: 100%;margin-top: 30px;margin-bottom: 20px;font-size: 10px;">
                 <div style="width:30%;margin-left: 70px;">
                     Appartenenza a Gruppi di studio
@@ -261,9 +255,9 @@
                 </div>
 
             </div>
-{{--            ------------------------------}}
 
-{{--            -------------------------------------}}
+
+
 
 
 
@@ -283,9 +277,9 @@
 
     </div>
 
-{{--        -----------------------------------------------}}
+
         <div style="width: 70%;border-bottom:1px solid black;clear: both;margin-left: 80px;margin-top:1px;padding: 0px;">
-            <span style="font-size: 13px;">Il saldo delle quote sociali è paria €  &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="font-weight: bolder;">{{$balance}}</span>
+            <span style="font-size: 13px;">Il saldo delle quote sociali è paria €  &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="font-weight: bolder;">-{{round($balance)}}</span>
             </span>
         </div>
         <p style="font-size: 11px;">Il rinnovo della iscrizione è mediante:</p>
@@ -309,48 +303,6 @@
         <span style="text-align: right;color: red;font-size: 11px;padding: 0px;float: right;margin-bottom: -30px;">P.IVA 04394411005</span>
 
 
-{{--    <div style="border-bottom: 1px solid black;">--}}
-{{--        <p style="text-align: left">Il saldo delle quote sociali è pari a - € {{$balance}}</p>--}}
-{{--    </div>--}}
-{{--    <p style="text-align: left">Il rinnovo della iscrizione è mediante:</p>--}}
-{{--    <div class="row">--}}
-{{--        <div class="col-xs-4">--}}
-{{--            <input type="checkbox"><p style="text-align: left">Bollettino di conto corrente postale n. 88043005(allegato)</p>--}}
-{{--        </div>--}}
-{{--    </div>--}}
-{{--    <div class="row">--}}
-{{--        <div class="col-xs-2">--}}
-{{--            <input type="checkbox"><p style="text-align: left">Carte di credito</p>--}}
-{{--        </div>--}}
-{{--        <div class="col-xs-2">--}}
-{{--            <input type="checkbox"><p style="text-align: left">CartaSì</p>--}}
-{{--        </div>--}}
-{{--        <div class="col-xs-2">--}}
-{{--            <input type="checkbox"><p style="text-align: left">Visa</p>--}}
-{{--        </div>--}}
-{{--        <div class="col-xs-2">--}}
-{{--            <input type="checkbox"><p style="text-align: left">Mastercard</p>--}}
-{{--        </div>--}}
-{{--        <div class="col-xs-2">--}}
-{{--            <input type="checkbox"><p style="text-align: left">Eurocard</p>--}}
-{{--        </div>--}}
-{{--    </div>--}}
-{{--    <div class="row">--}}
-{{--        <div class="col-xs-12">--}}
-{{--            <p style="text-align: left">Carta di credito n.ro: _________________________ Data di scadenza:___________________ Cod controllo: ________________</p>--}}
-{{--        </div>--}}
-{{--    </div>--}}
-{{--    <div class="row">--}}
-{{--        <div class="col-xs-12">--}}
-{{--            <input type="checkbox"><p style="text-align: left">Bonifico bancario su c/c intestato SID <b>IBAN IT 51 H 03069 09606 1000000722289</b></p>--}}
-{{--        </div>--}}
-{{--    </div>--}}
-{{--    <p><b>Firma: __________________________________________</b></p>--}}
-{{--    <div style="border-bottom: solid 1px black">--}}
-{{--        <p style="text-align: center;padding-top: 10px"><b>Annotazioni: Controllare i dati ed apportare le eventuali variazioni negli appositi spazi sulla destra del modulo</b></p>--}}
-{{--    </div>--}}
-{{--    <p style="text-align: right;color: red">P.IVA 04394411005</p>--}}
-{{--</div>--}}
 <div style="position: fixed;width:130px;height:20px;right:-60px;top:330px;transform: rotate(-270deg);direction: ltr;font-weight: bold;font-size: 10px;">(*) Campo obbligatorio</div>
 
 </body>

@@ -69,8 +69,9 @@ class QuotaController extends Controller
         ]);
     }
 
-    public function send(Request $request, FlasherInterface $flasher)
+    public function send($request, FlasherInterface $flasher)
     {
+        dd($request->all());
         $validator = Validator::make($request->all(),[
            'region' => 'required'
         ]);

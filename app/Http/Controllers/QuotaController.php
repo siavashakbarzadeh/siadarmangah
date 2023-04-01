@@ -86,7 +86,7 @@ class QuotaController extends Controller
             $query->where('member_type','<>','Partecipante ECM');
             $query->where('region_id',$request->region);
         })->where('members.status',0)->get();
-        dd($members->toArray());
+//        dd($members->toArray());
         $studyGroups = StudyGroup::all();
         $committess = Committee::all();
 

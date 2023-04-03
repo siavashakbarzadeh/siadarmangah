@@ -165,7 +165,7 @@
             </div>
 
             <div style="height:auto;width: 65%;float: right;">
-                <fieldset style="border: solid 1px black;padding:1px 15px;margin:25px 15px 0px;border-radius: 5px;max-height: 30px;">
+                <fieldset style="border: solid 1px black;padding:1px 15px;margin:18px 15px 3px;border-radius: 5px;max-height: 30px;">
                     <legend style="text-transform: uppercase;font-size: 9px;width: auto;"><b style="text-transform: uppercase;border: none;">eseguito da</b></legend>
                     <p style="font-weight: bold;font-size: 14px;padding: 2px 50px;text-transform: uppercase;font-weight: bolder;border-bottom: solid 1px black;">
                         {{$member->surname ?? ''}} {{$member->name ?? ''}}

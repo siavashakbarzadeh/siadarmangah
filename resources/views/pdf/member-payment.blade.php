@@ -54,7 +54,7 @@
 <div class="container">
     <div class="row">
         <div style="width: 40%;min-height: auto; float: left;border-right: solid 1px black;">
-            <p style="padding:0 0 1px 0;">
+            <p style="padding:1px;">
                 <span style="width: 70%;float: left;margin-top: -4px;">
                     <span style="text-transform: uppercase;font-size: 10px;">conti correnti postali</span> -
                     <span style="text-transform: capitalize;font-size: 10px;">ricevuta di versamento </span>

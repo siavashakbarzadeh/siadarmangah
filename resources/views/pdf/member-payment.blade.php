@@ -211,7 +211,7 @@
 {{--            </div>--}}
         </div>
     </div>
-    <div style="position: fixed;top: 180px;right: -39px;width: 230px;height: 20px;transform: rotate(-90deg);font-size: 7px;border: solid 1px red">
+    <div style="position: fixed;top: 210px;right: -90px;width: 230px;height: 20px;transform: rotate(-90deg);font-size: 7px;border: solid 1px red">
         Mod CH 8 ter-Mod12409A-ed1/10-EP1902/EP1903-St.[3]
     </div>
 </div>

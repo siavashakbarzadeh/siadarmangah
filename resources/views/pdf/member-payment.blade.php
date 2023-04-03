@@ -81,8 +81,8 @@
     </div>
     <div class="row">
 {{--        40%--}}
-                <div style="width: 40%;height: 450px; float: left;border-right: solid 1px black;">
-                    <p style="padding: 2px 15px;border: solid 1px red;">
+                <div style="width: 40%;height: 420px; float: left;border-right: solid 1px black;">
+                    <p style="padding: 2px 15px;">
 
                         <span class="bg-dark" style="display: inline-block; background: black;width: 25px;height: 25px;color: white;margin-top: 10px;
                         padding: 5px;text-align: center;font-size: 25px;">€</span>
@@ -132,7 +132,7 @@
 {{--                    </div>--}}
                  </div>
 
-        <div style="width:60%;height: 450px;float: left;border-left: 1px solid green;">
+        <div style="width:60%;height: 420px;float: left;border-left: 1px solid green;">
             <p style="padding: 2px 15px;">
 {{--                <img src="../../../public/img/euro.jpeg" alt="" style="width: 30px;height: 30px;">--}}
                 <span class="bg-dark" style="display: inline-block; background: black;width: 25px;height: 25px;color: white;

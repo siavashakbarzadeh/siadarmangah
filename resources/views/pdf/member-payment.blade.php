@@ -221,8 +221,9 @@
     </div>
 </div>
 <div >
-    <div  style="width:97%;height:60px;margin-right:14px;border: solid 1px red;margin-top: -1px;">
-        kdlkjkljd
+    <div  style="width:97%;height:60px;margin-right:14px;margin-top: -1px;">
+        <div style="width: 40%;border: solid 1px red;"></div>
+        <div style="width: 60%;border: solid 1px green;"></div>
     </div>
 </div>
 </body>

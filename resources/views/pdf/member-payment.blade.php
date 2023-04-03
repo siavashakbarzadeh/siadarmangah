@@ -147,7 +147,7 @@
 {{--                <b style="font-weight: bolder;font-size: 14px;">TD &nbsp;123 </b>--}}
 {{--                &nbsp;&nbsp;&nbsp;&nbsp;importo in lettere: <b style="padding-left: 10px;font-size: 11px;">{{ $converted ?? ''}}</b>--}}
 {{--            </p>--}}
-            <fieldset style="border: solid 1px black;padding: 1px 15px;margin:-4px 15px  ;border-radius: 5px;max-height: 30px;">
+            <fieldset style="border: solid 1px black;padding: 1px 15px;margin:-10px 15px 3px  ;border-radius: 5px;max-height: 30px;">
             <legend style="text-transform: uppercase;font-size: 9px;width: auto;"><b style="text-transform: uppercase;border: none;">intestato a</b></legend>
             <p style="font-weight: bold;font-size: 16px;padding: 2px 50px;text-transform: uppercase;font-weight: bolder;border-bottom: solid 1px black;">
                 società italiana di diabetologia

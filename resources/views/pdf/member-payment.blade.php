@@ -132,7 +132,7 @@
 {{--                    </div>--}}
                  </div>
 
-        <div style="width:60%;height: 350px;float: left;border-left: 1px solid green;">
+        <div style="width:60%;height: 350px;float: left;">
             <p style="padding: 2px 15px;">
 {{--                <img src="../../../public/img/euro.jpeg" alt="" style="width: 30px;height: 30px;">--}}
                 <span class="bg-dark" style="display: inline-block; background: black;width: 25px;height: 25px;color: white;margin-top: 10px;
@@ -223,7 +223,9 @@
 <div >
     <div  style="width:97%;height:60px;margin-right:15px;margin-top: -1px;border-bottom: solid 1px black;border-right: solid 1px black;border-left: solid 1px black;">
         <div style="width: 40%;float: left;height: 60px;"></div>
-        <div style="width: 60%;border-left: solid 1px black;float: right;height: 60px;margin-left: 1px;"></div>
+        <div style="width: 60%;border-left: solid 1px black;float: right;height: 60px;margin-left: 1px;text-align: right;padding-right: 20px;">
+            <span style="margin-top: 10px;display: inline-block;">123 ></span>
+        </div>
     </div>
 </div>
 </body>

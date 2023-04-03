@@ -159,7 +159,9 @@
                 <p style="font-size: 14px;padding: 2px 100px;text-transform: none;border-bottom: solid 1px black;">pagamento quota/e associativale</p>
             </fieldset>
             <div style="height:90px;width: 30%;margin-left: 10px;float: left;padding-top:30px;text-align: center;">
-            &nbsp;<b style="font-size: 20px;"></b>
+            &nbsp;<b style="font-size: 20px;">
+                    {{$member->id}}
+                </b>
             </div>
 
             <div style="height:auto;width: 65%;float: right;">
@@ -209,9 +211,7 @@
                     <li style="font-size: 7px;text-transform: none;padding-left: 84px;">importo in euro &nbsp;&nbsp;  numero conto &nbsp;&nbsp;  tipo documento</li>
                 </span>
             </div>
-{{--            <div style="width: 95%;padding-right:30px;border-right: solid 1px black;border-bottom: solid 1px black;height: 61px;clear: both;margin-top: -110px;font-weight: bold;font-size: 22px;text-align: right;">--}}
-{{--                <span style="margin-top: 10px;display: inline-block;">123 ></span>--}}
-{{--            </div>--}}
+
         </div>
 
     </div>

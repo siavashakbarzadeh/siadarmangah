@@ -94,7 +94,7 @@ class QuotaController extends Controller
             if ($member->year_sent !== 1) {
 
                 $privacyPath = null;
-                if($member->consent == 0)
+                if(!$member->consent)
                 {
                     //Invia modulo privacy
                     //storage_path('app/public/attachments/Informativa.pdf');
@@ -111,9 +111,6 @@ class QuotaController extends Controller
 
                     $pdf->save(storage_path('app/public/attachments/'.(Carbon::now()->format('Y')).'/privacy_' . $member->name . '_' .$member->surname. '.pdf'));
                     //
-                }else if (Storage::disk('public')->exists('attachments/'.(Carbon::now()->format('Y')).'/privacy_'. $member->name . '_' .$member->surname. '.pdf')){
-
-                    $privacyPath = 'attachments/'.(Carbon::now()->format('Y')).'/privacy_'. $member->name . '_' .$member->surname. '.pdf';
                 }
 
                 //creates member card
@@ -141,6 +138,7 @@ class QuotaController extends Controller
                 $sent->email = $member->email;
                 $sent->scheda_path = 'attachments/'.(Carbon::now()->format('Y')).'/scheda_'. $member->name . '_' .$member->surname. '.pdf';
                 $sent->privacy_path = $privacyPath;
+                $sent->payment_path = 'attachments/'.(Carbon::now()->format('Y')).'/scheda_'. $member->name . '_' .$member->surname. '.pdf';
                 $sent->courses_path = NULL;
                 $sent->year = (Carbon::now()->format('Y'));
                 $sent->region = $request->region;
@@ -253,9 +251,10 @@ class QuotaController extends Controller
             $coursePath = $quota->courses_path;
             $schedaPath = $quota->scheda_path;
             $privacyPath = $quota->privacy_path;
+            $paymentPath = $quota->payment_path;
         }
 
-        Mail::mailer('mailgun-luisa')->send('email.quota', $data, function($message)use($data, $coursePath, $schedaPath, $privacyPath) {
+        Mail::mailer('mailgun-luisa')->send('email.quota', $data, function($message)use($data, $coursePath, $schedaPath, $privacyPath,$paymentPath) {
             $message->to('l.perrupane@siditalia.it')
                 ->subject("Quota Associativa SID ".Carbon::today()->format("Y"));
             if($coursePath !== NULL)
@@ -269,6 +268,10 @@ class QuotaController extends Controller
             if($privacyPath !== NULL)
             {
                 $message->attach(storage_path(env('DOWNLOAD_URL').$privacyPath));
+            }
+            if($paymentPath !== NULL)
+            {
+                $message->attach(storage_path(env('DOWNLOAD_URL').$paymentPath));
             }
         });
     }

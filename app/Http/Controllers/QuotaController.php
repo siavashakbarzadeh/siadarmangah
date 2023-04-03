@@ -91,6 +91,7 @@ class QuotaController extends Controller
         $committess = Committee::all();
 
         foreach($members as $member) {
+            dd($member,$member->consent,$privacyPath);
             if ($member->year_sent !== 1) {
 
                 $privacyPath = null;
@@ -112,7 +113,6 @@ class QuotaController extends Controller
                     $pdf->save(storage_path('app/public/attachments/'.(Carbon::now()->format('Y')).'/privacy_' . $member->name . '_' .$member->surname. '.pdf'));
                     //
                 }
-                dd($member,$member->consent,$privacyPath);
 
                 //creates member card
                 $balance = Payment::selectRaw('amount - payed_amount as balance')

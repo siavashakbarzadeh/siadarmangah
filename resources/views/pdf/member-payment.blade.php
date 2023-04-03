@@ -215,7 +215,7 @@
         </div>
 
     </div>
-    <div  style="width:90%;height:60px;margin:0px -20px 0px -30px;border: solid 1px red;">
+    <div  style="width:96%;height:60px;margin:0px -20px 0px -30px;border: solid 1px red;">
         kdlkjkljd
     </div>
     <div style="position: fixed;top: 200px;right: -85px;width: 230px;height: 20px;transform: rotate(-90deg);font-size: 7px;">

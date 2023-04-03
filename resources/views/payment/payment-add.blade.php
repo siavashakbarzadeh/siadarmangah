@@ -141,9 +141,10 @@
                                                     </td>
                                                     <td> <i data-path="{{\Illuminate\Support\Facades\Storage::url($receipt->path)}}" class="fas fa-print printer pointer blue-link"></i> </td>
                                                     <td> <i onclick="send({{$receipt->id}},{{$receipt->member_id}})" class="fas fa-envelope pointer blue-link"></i> </td>
-                                                    <td> <a href="{{\Illuminate\Support\Facades\Storage::url($receipt->path)}}" target="_blank"> <i class="fas fa-desktop"></i> </a> </td>
+                                                    <td> <a href="{{route('payment.visualizza-pdf',$receipt->member_payment_id)}}" target="_blank"> <i class="fas fa-desktop"></i> </a> </td>
                                                     <td><a href="{{route('download-receipt', $receipt->id)}}"> <i class="fas fa-download"></i> </a> </td>
                                                     <td>
+
                                                         <form action="{{route('delete-receipt', $receipt->id)}}">
                                                             <button type="submit" class="no-button"> <i class="fas fa-trash-alt red"></i> </button>
                                                         </form>

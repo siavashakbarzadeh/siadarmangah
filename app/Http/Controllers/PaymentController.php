@@ -237,6 +237,11 @@ class PaymentController extends Controller
         return response()->download(storage_path(env('DOWNLOAD_URL').$receipt->path));
     }
 
+    public function visualizzaPdf($payment)
+    {
+        dd("ok",$payment);
+    }
+
     public function deleteReceipt($receipt_id, FlasherInterface $flasher)
     {
         $payment = Payment::query()->findOrFail($receipt_id);

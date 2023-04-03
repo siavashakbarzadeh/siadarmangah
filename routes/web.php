@@ -59,6 +59,7 @@ Route::post('/payment/add', [App\Http\Controllers\PaymentController::class, 'add
 Route::post('/payment/delete', [App\Http\Controllers\PaymentController::class, 'delete'])->middleware(['auth'])->name('payment-delete');
 Route::get('/payment/receipts/{id}', [App\Http\Controllers\PaymentController::class, 'download'])->middleware(['auth'])->name('download-receipt');
 Route::get('/payment/receipts/delete/{id}', [App\Http\Controllers\PaymentController::class, 'deleteReceipt'])->middleware(['auth'])->name('delete-receipt');
+Route::get('/payment/{id}/visualizza-pdf', [App\Http\Controllers\PaymentController::class, 'visualizzaPdf'])->middleware(['auth'])->name('payment.visualizza-pdf');
 Route::post('/receipt/send/', [App\Http\Controllers\PaymentController::class, 'send'])->middleware(['auth'])->name('send-receipt');
 
 //RECEIPTS ROUTES

@@ -92,7 +92,7 @@
                         importo in lettere: <b style="padding-left: 10px;font-size: 11px;">{{ $converted ?? ''}}</b>
                         </p>
 
-                        <fieldset style="border: solid 1px red;padding:0px;margin:0px 10px;border-radius: 5px;height: 20px;">
+                        <fieldset style="border: solid 1px black;padding:1px 15px;margin:0px 10px;border-radius: 5px;height: 30px;">
                             <legend style="text-transform: uppercase;font-size: 9px;width: auto;"><b style="text-transform: uppercase;border: none;">intestato a</b></legend>
                             <p style="font-weight: bold;font-size: 13px;text-transform: uppercase;font-weight: bolder;border-bottom: solid 1px black;">società italiana di diabetologia</p>
 

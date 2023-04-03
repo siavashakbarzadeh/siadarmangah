@@ -221,7 +221,7 @@
     </div>
 </div>
 <div >
-    <div  style="width:97%;height:60px;margin-right:14px;border: solid 1px red;">
+    <div  style="width:97%;height:60px;margin-right:14px;border: solid 1px red;margin-top: -1px;">
         kdlkjkljd
     </div>
 </div>

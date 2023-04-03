@@ -127,9 +127,9 @@
 
 
 
-{{--                    <div style="width: 100%;height:60px;border-right: solid 1px black;border-left: solid 1px black;border-bottom: solid 1px black;margin-top: 51px;">--}}
+                    <div style="width: 100%;height:60px;border-right: solid 1px black;border-left: solid 1px black;border-bottom: solid 1px black;margin-top: 51px;">
 
-{{--                    </div>--}}
+                    </div>
                  </div>
 
         <div style="width:60%;height: 370px;float: left;border-left: 1px solid green;">

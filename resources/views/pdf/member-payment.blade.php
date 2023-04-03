@@ -127,7 +127,7 @@
 
 
 
-                    <div style="width: 100%;height:60px;border-right: solid 1px black;border-left: solid 1px black;border-bottom: solid 1px black;margin-top: 51px;">
+                    <div style="width: 100%;height:60px;border-right: solid 1px black;border-left: solid 1px black;border-bottom: solid 1px black;margin-top: 0px;">
 
                     </div>
                  </div>

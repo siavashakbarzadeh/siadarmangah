@@ -132,7 +132,7 @@
 {{--                    </div>--}}
                  </div>
 
-        <div style="width:60%;height: 300px;float: left;">
+        <div style="width:60%;height: 450px;float: left;">
             <p style="padding: 2px 15px;">
 {{--                <img src="../../../public/img/euro.jpeg" alt="" style="width: 30px;height: 30px;">--}}
                 <span class="bg-dark" style="display: inline-block; background: black;width: 25px;height: 25px;color: white;

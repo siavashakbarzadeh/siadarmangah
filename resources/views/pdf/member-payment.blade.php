@@ -119,7 +119,7 @@
                     <div style="margin:-30px 0px;padding: 4px;clear: both;font-weight: bold;height:20px;width: 96%;"  >
                     <span style="width: 100%;font-size: 8px;text-transform: uppercase;margin-right: 30px;list-style-type: none;font-weight: bold;text-align: right;">
 
-                    <li style="margin-top:20px;margin-right: 30px;border: solid 1px red;">bollo dell'ufficio postale</li>
+                    <li style="margin-top:10px;margin-right: 30px;border: solid 1px red;">bollo dell'ufficio postale</li>
 
 
                     </span>
@@ -197,7 +197,7 @@
                 </div>
             </div>
 
-            <div style="margin:-60px 0px 0px; ;padding: -30px 4px 0px;clear: both;font-weight: bold;height:20px;width: 100%;"  >
+            <div style="margin:-10px 0px 0px; ;padding: -30px 4px 0px;clear: both;font-weight: bold;height:20px;width: 100%;border: solid 1px red;"  >
                 <span style="width: 40%;font-size: 8px;text-transform: uppercase;padding-left: 10px;list-style-type: none;font-weight: bold;">
 
                     <li>bollo dell'ufficio postale</li>

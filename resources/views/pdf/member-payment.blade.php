@@ -53,8 +53,8 @@
 <body>
 <div class="container">
     <div class="row">
-        <div style="width: 40%;min-height: auto; float: left;border-right: solid 1px black;">
-            <p style="padding: 10px;">
+        <div style="width: 45%;min-height: auto; float: left;border-right: solid 1px black;">
+            <p style="padding:1px 10px;">
                 <span style="width: 70%;float: left;margin-top: -4px;">
                     <span style="text-transform: uppercase;font-size: 10px;">conti correnti postali</span> -
                     <span style="text-transform: capitalize;font-size: 10px;">ricevuta di versamento </span>
@@ -66,7 +66,7 @@
 
 
         </div>
-        <div style="width: 60%;min-height: auto;float: left; ">
+        <div style=";min-height: auto;float: left; ">
             <p style="padding: 10px;">
                 <span style="width: 70%;float: left;margin-top: -4px;">
                     <span style="text-transform: uppercase;font-size: 10px;">conti correnti postali</span> -
@@ -81,8 +81,8 @@
     </div>
     <div class="row">
 {{--        40%--}}
-                <div style="width: 40%;height: 500px; float: left;border-right: solid 1px black;">
-                    <p style="padding: 16px;">
+                <div style="width: 45%;height: 300px; float: left;border-right: solid 1px black;">
+                    <p style="padding: 0px 16px;">
 
                         <span class="bg-dark" style="display: inline-block; background: black;width: 25px;height: 25px;color: white;
                         padding: 5px;text-align: center;font-size: 25px;">€</span>
@@ -92,9 +92,9 @@
                         importo in lettere: <b style="padding-left: 10px;font-size: 11px;">{{ $converted ?? ''}}</b>
                         </p>
 
-                        <fieldset style="border: solid 1px black;padding: 10px;margin:0px 10px;border-radius: 5px;max-height: 50px;">
+                        <fieldset style="border: solid 1px red;padding:0px;margin:0px 10px;border-radius: 5px;height: 20px;">
                             <legend style="text-transform: uppercase;font-size: 9px;width: auto;"><b style="text-transform: uppercase;border: none;">intestato a</b></legend>
-                            <p style="font-weight: bold;font-size: 13px;padding: 2px 20px;text-transform: uppercase;font-weight: bolder;border-bottom: solid 1px black;">società italiana di diabetologia</p>
+                            <p style="font-weight: bold;font-size: 13px;text-transform: uppercase;font-weight: bolder;border-bottom: solid 1px black;">società italiana di diabetologia</p>
 
                         </fieldset>
                     <fieldset style="border: solid 1px black;padding: 10px;margin:12px 10px;border-radius: 5px;max-height: 30px;">
@@ -131,7 +131,7 @@
                     </div>
                  </div>
 
-        <div style="width: 60%;height: 500px;float: left;">
+        <div style="width: 55%;height: 500px;float: left;">
             <p style="padding: 10px;">
 {{--                <img src="../../../public/img/euro.jpeg" alt="" style="width: 30px;height: 30px;">--}}
                 <span class="bg-dark" style="display: inline-block; background: black;width: 25px;height: 25px;color: white;

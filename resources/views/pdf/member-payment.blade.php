@@ -54,7 +54,7 @@
 <div class="container">
     <div class="row">
         <div style="width: 40%;min-height: auto; float: left;border-right: solid 1px black;">
-            <p style="padding:3px;">
+            <p style="padding:0px;">
                 <span style="width: 70%;float: left;margin-top: -4px;">
                     <span style="text-transform: uppercase;font-size: 10px;">conti correnti postali</span> -
                     <span style="text-transform: capitalize;font-size: 10px;">ricevuta di versamento </span>
@@ -67,7 +67,7 @@
 
         </div>
         <div style="width:60%;min-height: auto;float: left; ">
-            <p style="padding: 3px;">
+            <p style="padding: 0px;">
                 <span style="width: 70%;float: left;margin-top: -4px;">
                     <span style="text-transform: uppercase;font-size: 10px;">conti correnti postali</span> -
                     <span style="text-transform: capitalize;font-size: 10px;">ricevuta di accredito </span>

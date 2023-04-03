@@ -99,6 +99,7 @@
                                             @endif
                                         </td>
                                         <td>
+                                            {{ $quota->privacy_path }}
                                             @if($quota->privacy_path)
                                             <a href="{{\Illuminate\Support\Facades\Storage::url($quota->privacy_path)}}" target="_blank"> <i class="fas fa-desktop"></i> </a>
                                             @endif

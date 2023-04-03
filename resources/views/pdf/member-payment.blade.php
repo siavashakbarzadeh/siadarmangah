@@ -140,13 +140,13 @@
                 <span>sul C/C n. &nbsp;&nbsp;&nbsp;&nbsp; <b>88043005</b></span>
                 <span style="margin-left: 120px;">di Euro &nbsp;&nbsp;&nbsp;&nbsp;<b>{{ round($balance) ?? ''}}</b> </span>
             </p>
-{{--            <p style="text-transform: uppercase;font-size: 9px;padding:0px 11px;margin-top: -10px">--}}
-{{--                importo in lettere: <b style="padding-left: 10px;font-size: 11px;">{{ $converted ?? ''}}</b>--}}
-{{--            </p>--}}
-            <p style="text-transform: uppercase;font-size: 9px;padding:-11px 11px;">
-                <b style="font-weight: bolder;font-size: 14px;">TD &nbsp;123 </b>
-                &nbsp;&nbsp;&nbsp;&nbsp;importo in lettere: <b style="padding-left: 10px;font-size: 11px;">{{ $converted ?? ''}}</b>
+            <p style="text-transform: uppercase;font-size: 9px;padding:0px 11px;margin-top: -10px">
+                importo in lettere: <b style="padding-left: 10px;font-size: 11px;">{{ $converted ?? ''}}</b>
             </p>
+{{--            <p style="text-transform: uppercase;font-size: 9px;padding:-11px 11px;">--}}
+{{--                <b style="font-weight: bolder;font-size: 14px;">TD &nbsp;123 </b>--}}
+{{--                &nbsp;&nbsp;&nbsp;&nbsp;importo in lettere: <b style="padding-left: 10px;font-size: 11px;">{{ $converted ?? ''}}</b>--}}
+{{--            </p>--}}
             <fieldset style="border: solid 1px black;padding: 1px 15px;margin:3px 15px ;border-radius: 5px;max-height: 30px;">
             <legend style="text-transform: uppercase;font-size: 9px;width: auto;"><b style="text-transform: uppercase;border: none;">intestato a</b></legend>
             <p style="font-weight: bold;font-size: 16px;padding: 2px 50px;text-transform: uppercase;font-weight: bolder;border-bottom: solid 1px black;">

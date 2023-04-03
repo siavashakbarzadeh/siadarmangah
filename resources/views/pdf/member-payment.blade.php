@@ -167,7 +167,7 @@
                     </p>
 
                 </fieldset>
-                <fieldset style="border: solid 1px black;padding:0px 10px;margin: 16px 25px;border-radius: 5px;max-height: 30px;">
+                <fieldset style="border: solid 1px black;padding:0px 10px;margin: 16px 10px;border-radius: 5px;max-height: 30px;">
                     <legend style="text-transform: uppercase;font-size: 9px;width: auto;"><b style="text-transform: uppercase;border: none;">via-piazza</b></legend>
                     <p style="font-weight: 200;font-size: 11px;padding: 2px 50px;text-transform: uppercase;font-weight: bolder;">
                         {{$member->residence->residence ?? ''}}
@@ -175,14 +175,14 @@
 
                 </fieldset>
                 <div  style="padding:0px;margin: 20px 25px;max-height: 50px;width: 89%;">
-                    <fieldset style="border: solid 1px black;padding:4px 0px;margin: -10px 0px;border-radius: 5px;max-height: 25px;width: 30%;">
+                    <fieldset style="border: solid 1px black;padding:4px 0px;margin: -10px 0px;border-radius: 5px;height: 20px;width: 30%;">
                         <legend style="text-transform: uppercase;font-size: 9px;width: auto;"><b style="text-transform: uppercase;border: none;">cap</b></legend>
                         <p style="font-weight: 200;font-size: 11px;padding: 2px 50px;text-transform: uppercase;">
                             {{$member->residence->cap ?? ''}}
                         </p>
 
                     </fieldset>
-                    <fieldset style="border: solid 1px black;padding:4px 0px;margin: -25px 10px;border-radius: 5px;max-height: 25px;width: 60%;float: right">
+                    <fieldset style="border: solid 1px black;padding:4px 0px;margin: -25px 10px;border-radius: 5px;height: 20px;width: 60%;float: right">
                         <legend style="text-transform: uppercase;font-size: 9px;width: auto;"><b style="text-transform: uppercase;border: none;">localita</b></legend>
                         <p style="font-weight: 200;font-size: 11px;padding: 2px 20px;text-transform: uppercase;">
                             {{$member->residence->city ?? ''}}

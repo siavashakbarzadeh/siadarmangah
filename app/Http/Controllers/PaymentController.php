@@ -240,6 +240,7 @@ class PaymentController extends Controller
     public function deleteReceipt($receipt_id, FlasherInterface $flasher)
     {
         $payment = Payment::find($receipt_id);
+        dd($payment);
         $paymentType = PaymentTypePivot::where('payment_id', $payment->id)->first();
         $receipt = MemberReceipt::where('member_payment_id', $payment->id)->first();
         $paymentTypeDelete = $paymentType->delete();

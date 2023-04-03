@@ -105,11 +105,11 @@
                     <fieldset style="border: solid 1px black;padding:1px 10px;margin:12px 10px;border-radius: 5px;height:auto;width: 50%;">
                         <legend style="text-transform: uppercase;font-size: 8px;width: auto;"><b style="text-transform: uppercase;border: none;">eseguito da</b></legend>
                         <span style="width:100%;font-weight: bold;text-transform: capitalize;border-bottom: 1px solid black;font-size: 11px;padding-top: 0px;padding-bottom: 0px;display: inline-block">{{$member->surname ?? ''}} {{$member->name ?? ''}}</span>
-                        <span style="width:100%;display:inline-block;text-transform: uppercase;font-size: 8px;font-weight: bolder;margin-top: 13px;padding-top: 0px;padding-bottom: 0px;">via-piazza</span>
+                        <span style="width:100%;display:inline-block;text-transform: uppercase;font-size: 8px;font-weight: bolder;margin-top: 7px;padding-top: 0px;padding-bottom: 0px;">via-piazza</span>
                         <span style="width:100%;display:inline-block;font-weight: bold;text-transform: capitalize;border-bottom: 1px solid black;font-size: 11px;padding-top: 0px;padding-bottom: 0px;">{{$member->residence->residence ?? ''}}</span>
-                        <span style="width:100%;display:inline-block;text-transform: uppercase;font-size: 8px;font-weight: bolder;margin-top: 3px;padding-top: 0px;padding-bottom: 0px;">cap</span>
+                        <span style="width:100%;display:inline-block;text-transform: uppercase;font-size: 8px;font-weight: bolder;margin-top: 7px;padding-top: 0px;padding-bottom: 0px;">cap</span>
                         <span style="width:100%;display:inline-block;font-weight: bold;text-transform: capitalize;border-bottom: 1px solid black;font-size: 11px;padding-top: 0px;padding-bottom: 0px;">{{$member->residence->cap ?? ''}}</span>
-                        <span style="width:100%;display:inline-block;text-transform: uppercase;font-size: 8px;font-weight: bolder;margin-top:3px;padding-top: 0px;padding-bottom: 0px;">localita</span>
+                        <span style="width:100%;display:inline-block;text-transform: uppercase;font-size: 8px;font-weight: bolder;margin-top:7px;padding-top: 0px;padding-bottom: 0px;">localita</span>
                         <span style="width:100%;display:inline-block;font-weight: bold;text-transform: capitalize;border-bottom: 1px solid black;font-size: 11px;padding-top: 0px;padding-bottom: 0px;">{{$member->residence->city ?? ''}}</span>
 
                     </fieldset>

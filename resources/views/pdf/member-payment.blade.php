@@ -135,7 +135,7 @@
         <div style="width:60%;height: 370px;float: left;border-left: 1px solid green;">
             <p style="padding: 2px 15px;">
 {{--                <img src="../../../public/img/euro.jpeg" alt="" style="width: 30px;height: 30px;">--}}
-                <span class="bg-dark" style="display: inline-block; background: black;width: 25px;height: 25px;color: white;
+                <span class="bg-dark" style="display: inline-block; background: black;width: 25px;height: 25px;color: white;margin-top: 10px;
                         padding: 5px;text-align: center;font-size: 25px;">€</span>
                 <span>sul C/C n. &nbsp;&nbsp;&nbsp;&nbsp; <b>88043005</b></span>
                 <span style="margin-left: 120px;">di Euro &nbsp;&nbsp;&nbsp;&nbsp;<b>{{ round($balance) ?? ''}}</b> </span>

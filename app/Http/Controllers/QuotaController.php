@@ -90,7 +90,7 @@ class QuotaController extends Controller
         $studyGroups = StudyGroup::all();
         $committess = Committee::all();
 
-        $members = $members->where('surname','BULOTTA');
+        dd($members->toArray());
         foreach($members as $member) {
             if ($member->year_sent != 0) {
 

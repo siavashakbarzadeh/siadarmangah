@@ -223,7 +223,7 @@
 <div >
     <div  style="width:97%;height:60px;margin-right:15px;margin-top: -1px;border-bottom: solid 1px black;border-right: solid 1px black;border-left: solid 1px black;">
         <div style="width: 40%;float: left;height: 60px;"></div>
-        <div style="width: 60%;border-left: solid 1px black;float: right;height: 60px;"></div>
+        <div style="width: 60%;border-left: solid 1px black;float: right;height: 60px;margin-left: 1px;"></div>
     </div>
 </div>
 </body>

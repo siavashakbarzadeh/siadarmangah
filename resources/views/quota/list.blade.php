@@ -105,8 +105,8 @@
                                         </td>
 
                                         <td>
-                                            @if($member->id)
-                                                <a href="{{route('member-bolletino', $member->id)}}"> <i class="fas fa-desktop"></i> </a>
+                                            @if($quota->member_id)
+                                                <a href="{{route('member-bolletino', $quota->member_id)}}"> <i class="fas fa-desktop"></i> </a>
                                             @endif
                                         </td>
                                         <td> <i onclick="send({{$quota->member_id}})" class="fas fa-envelope pointer blue-link"></i> </td>

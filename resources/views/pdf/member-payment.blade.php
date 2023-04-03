@@ -87,9 +87,9 @@
                         <span class="bg-dark" style="display: inline-block; background: black;width: 25px;height: 25px;color: white;margin-top: 10px;
                         padding: 5px;text-align: center;font-size: 25px;">€</span>
                         <span>sul C/C n. &nbsp;&nbsp;&nbsp;&nbsp; <b>88043005</b></span>
-                        <span style="margin-left: 70px;">di Euro &nbsp;&nbsp;<b>{{ round($balance) ?? ''}}</b>  </span>
+                        <span style="margin-left: 70px;font-weight: bold;">di Euro &nbsp;&nbsp;<b>{{ round($balance) ?? ''}}</b>  </span>
                         <p style="text-transform: uppercase;font-size: 9px;padding:0px 11px;margin-top: -10px">
-                        importo in lettere: <b style="padding-left: 10px;font-size: 11px;">{{ $converted ?? ''}}</b>
+                        <b>importo in lettere:</b> <b style="padding-left: 10px;font-size: 11px;">{{ $converted ?? ''}}</b>
                         </p>
 
                         <fieldset style="border: solid 1px black;padding:1px 15px;margin:0px 10px;border-radius: 5px;height: 30px;">
@@ -138,10 +138,10 @@
                 <span class="bg-dark" style="display: inline-block; background: black;width: 25px;height: 25px;color: white;margin-top: 10px;
                         padding: 5px;text-align: center;font-size: 25px;">€</span>
                 <span>sul C/C n. &nbsp;&nbsp;&nbsp;&nbsp; <b>88043005</b></span>
-                <span style="margin-left: 120px;">di Euro &nbsp;&nbsp;&nbsp;&nbsp;<b>{{ round($balance) ?? ''}}</b> </span>
+                <span style="margin-left: 120px;font-weight: bold;">di Euro &nbsp;&nbsp;&nbsp;&nbsp;<b>{{ round($balance) ?? ''}}</b> </span>
             </p>
             <p style="text-transform: uppercase;font-size: 9px;padding:0px 11px;margin-top: -10px">
-                <b style="font-weight: bolder;font-size: 14px;">TD &nbsp;&nbsp;123&nbsp;&nbsp;&nbsp; </b> importo in lettere: <b style="padding-left: 10px;font-size: 11px;">{{ $converted ?? ''}}</b>
+                <b style="font-weight: bolder;font-size: 14px;">TD &nbsp;&nbsp;123&nbsp;&nbsp;&nbsp; </b> <b>importo in lettere:</b> <b style="padding-left: 10px;font-size: 11px;">{{ $converted ?? ''}}</b>
             </p>
 {{--            <p style="text-transform: uppercase;font-size: 9px;padding:-11px 11px;">--}}
 {{--                <b style="font-weight: bolder;font-size: 14px;">TD &nbsp;123 </b>--}}

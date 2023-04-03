@@ -67,7 +67,7 @@
 
         </div>
         <div style="width:60%;min-height: auto;float: left; ">
-            <p style="padding:0 0 1px 0;">
+            <p style="padding:1px;">
                 <span style="width: 70%;float: left;margin-top: -4px;">
                     <span style="text-transform: uppercase;font-size: 10px;">conti correnti postali</span> -
                     <span style="text-transform: capitalize;font-size: 10px;">ricevuta di accredito </span>

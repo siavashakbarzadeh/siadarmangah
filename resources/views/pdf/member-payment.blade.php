@@ -116,14 +116,14 @@
 
                     </p>
 
-{{--                    <div style="margin:-13px 0px;padding: 4px;clear: both;font-weight: bold;height:20px;width: 96%;"  >--}}
-{{--                    <span style="width: 100%;font-size: 8px;text-transform: uppercase;margin-right: 30px;list-style-type: none;font-weight: bold;text-align: right;">--}}
+                    <div style="margin:-13px 0px;padding: 4px;clear: both;font-weight: bold;height:20px;width: 96%;"  >
+                    <span style="width: 100%;font-size: 8px;text-transform: uppercase;margin-right: 30px;list-style-type: none;font-weight: bold;text-align: right;">
 
-{{--                    <li style="margin-top: -20px;">bollo dell'ufficio postale</li>--}}
+                    <li style="margin-top: -20px;">bollo dell'ufficio postale</li>
 
 
-{{--                    </span>--}}
-{{--                    </div>--}}
+                    </span>
+                    </div>
 
 
 
@@ -174,7 +174,7 @@
                     </p>
 
                 </fieldset>
-                <div  style="padding:0px;margin: 20px 0px;height: auto;width:100%;border: solid 1px red;">
+                <div  style="padding:0px;margin: 20px 0px;height: auto;width:100%;">
                     <fieldset style="border: solid 1px black;padding:4px 0px;margin: -10px 10px 3px 15px;border-radius: 5px;height: 20px;width: 30%;">
                         <legend style="text-transform: uppercase;font-size: 9px;width: auto;"><b style="text-transform: uppercase;border: none;">cap</b></legend>
                         <p style="font-weight: 200;font-size: 11px;padding: 2px 50px;text-transform: uppercase;">
@@ -211,7 +211,7 @@
 {{--            </div>--}}
         </div>
     </div>
-    <div style="position: fixed;top: 200px;right: -85px;width: 230px;height: 20px;transform: rotate(-90deg);font-size: 7px;border: solid 1px red">
+    <div style="position: fixed;top: 200px;right: -85px;width: 230px;height: 20px;transform: rotate(-90deg);font-size: 7px;">
         Mod CH 8 ter-Mod12409A-ed1/10-EP1902/EP1903-St.[3]
     </div>
 </div>

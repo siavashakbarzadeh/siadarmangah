@@ -91,7 +91,7 @@ class QuotaController extends Controller
         $committess = Committee::all();
 
         foreach($members as $member) {
-            dd($member,$member->consent,$privacyPath);
+            dd($member,$member->consent);
             if ($member->year_sent !== 1) {
 
                 $privacyPath = null;

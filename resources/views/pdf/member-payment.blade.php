@@ -119,7 +119,7 @@
                     <div style="margin:-24px 0px;padding: 4px;clear: both;font-weight: bold;height:20px;width: 96%;"  >
                     <span style="width: 100%;font-size: 8px;text-transform: uppercase;margin-right: 30px;list-style-type: none;font-weight: bold;text-align: right;">
 
-                    <li style="margin-top: -20px;">bollo dell'ufficio postale</li>
+                    <li style="margin-top: -20px;margin-right: 60px;">bollo dell'ufficio postale</li>
 
 
                     </span>
@@ -216,7 +216,7 @@
 
     </div>
 
-    <div style="position: fixed;top: 180px;right: -85px;width: 230px;height: 20px;transform: rotate(-90deg);font-size: 7px;">
+    <div style="position: fixed;top: 200px;right: -85px;width: 230px;height: 20px;transform: rotate(-90deg);font-size: 7px;">
         Mod CH 8 ter-Mod12409A-ed1/10-EP1902/EP1903-St.[3]
     </div>
 </div>

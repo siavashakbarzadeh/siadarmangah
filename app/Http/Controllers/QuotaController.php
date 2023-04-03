@@ -94,7 +94,7 @@ class QuotaController extends Controller
             if ($member->year_sent !== 1) {
 
                 $privacyPath = null;
-                if(!$member->consent)
+                if($member->consent == 0)
                 {
                     //Invia modulo privacy
                     //storage_path('app/public/attachments/Informativa.pdf');
@@ -112,6 +112,7 @@ class QuotaController extends Controller
                     $pdf->save(storage_path('app/public/attachments/'.(Carbon::now()->format('Y')).'/privacy_' . $member->name . '_' .$member->surname. '.pdf'));
                     //
                 }
+                dd($member,$member->consent,$privacyPath);
 
                 //creates member card
                 $balance = Payment::selectRaw('amount - payed_amount as balance')

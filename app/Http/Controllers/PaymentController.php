@@ -239,13 +239,20 @@ class PaymentController extends Controller
 
     public function deleteReceipt($receipt_id, FlasherInterface $flasher)
     {
-        $payment = Payment::find($receipt_id);
+        $payment = Payment::query()->findOrFail($receipt_id);
         $paymentType = PaymentTypePivot::where('payment_id', $payment->id)->first();
-        dd($payment,$paymentType);
         $receipt = MemberReceipt::where('member_payment_id', $payment->id)->first();
-        $paymentTypeDelete = $paymentType->delete();
-        File::delete(storage_path(env('DOWNLOAD_URL').$payment->receipt->path));
-        $receiptDelete = $receipt->delete();
+        $paymentTypeDelete=null;
+        $receiptDelete=null;
+        if ($paymentType){
+            $paymentTypeDelete = $paymentType->delete();
+        }
+        if ($receipt){
+            $receiptDelete = $receipt->delete();
+        }
+
+        File::delete(storage_path(env('DOWNLOAD_URL').optional($payment->receipt)->path));
+
         if($receiptDelete && $paymentTypeDelete)
         {
             $payment->payed_amount = 0;

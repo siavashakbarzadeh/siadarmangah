@@ -81,7 +81,7 @@
     </div>
     <div class="row">
 {{--        40%--}}
-                <div style="width: 40%;height: auto; float: left;border-right: solid 1px black;">
+                <div style="width: 40%;height: 300px; float: left;border-right: solid 1px black;">
                     <p style="padding: 2px 15px;">
 
                         <span class="bg-dark" style="display: inline-block; background: black;width: 25px;height: 25px;color: white;margin-top: 10px;

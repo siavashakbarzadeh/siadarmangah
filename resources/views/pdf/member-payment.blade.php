@@ -212,7 +212,7 @@
         </div>
 
     </div>
-    <div class="row;" style="margin:0px -20px 3px 0px;border: solid 1px red;">
+    <div class="row;" style="margin:0px -20px 0px;border: solid 1px red;">
         kdlkjkljd
     </div>
     <div style="position: fixed;top: 200px;right: -85px;width: 230px;height: 20px;transform: rotate(-90deg);font-size: 7px;">

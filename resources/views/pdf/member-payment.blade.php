@@ -82,9 +82,9 @@
     <div class="row">
 {{--        40%--}}
                 <div style="width: 40%;height: 300px; float: left;border-right: solid 1px black;">
-                    <p style="padding: 0px 16px;">
+                    <p style="padding: 2px 15px;">
 
-                        <span class="bg-dark" style="display: inline-block; background: black;width: 25px;height: 25px;color: white;
+                        <span class="bg-dark" style="display: inline-block; background: black;width: 20px;height: 20px;color: white;
                         padding: 5px;text-align: center;font-size: 25px;">€</span>
                         <span>sul C/C n. &nbsp;&nbsp;&nbsp;&nbsp; <b>88043005</b></span>
                         <span style="margin-left: 70px;">di Euro &nbsp;&nbsp;<b>{{ round($balance) ?? ''}}</b>  </span>

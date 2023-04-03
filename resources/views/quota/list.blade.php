@@ -105,9 +105,8 @@
                                         </td>
 
                                         <td>
-                                            sfasfas
-                                            @if(!is_null($quota->payment_path))
-                                                <a href="{{\Illuminate\Support\Facades\Storage::url($quota->payment_path)}}" target="_blank"> <i class="fas fa-desktop"></i> </a>
+                                            @if($member->id)
+                                                <a href="{{route('member-bolletino', $member->id)}}"> <i class="fas fa-desktop"></i> </a>
                                             @endif
                                         </td>
                                         <td> <i onclick="send({{$quota->member_id}})" class="fas fa-envelope pointer blue-link"></i> </td>

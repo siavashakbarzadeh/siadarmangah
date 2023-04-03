@@ -81,7 +81,7 @@
     </div>
     <div class="row">
 {{--        40%--}}
-                <div style="width: 40%;height: 315px; float: left;border-right: solid 1px black;">
+                <div style="width: 40%;height: 320px; float: left;border-right: solid 1px black;">
                     <p style="padding: 2px 15px;">
 
                         <span class="bg-dark" style="display: inline-block; background: black;width: 25px;height: 25px;color: white;margin-top: 10px;
@@ -119,7 +119,7 @@
                     <div style="margin:-24px 0px;padding: 4px;clear: both;font-weight: bold;height:20px;width: 96%;"  >
                     <span style="width: 100%;font-size: 8px;text-transform: uppercase;margin-right: 30px;list-style-type: none;font-weight: bold;text-align: right;">
 
-                    <li style="margin-top: -20px;margin-right: 60px;">bollo dell'ufficio postale</li>
+                    <li style="margin-top: -20px;margin-right: 40px;">bollo dell'ufficio postale</li>
 
 
                     </span>
@@ -132,7 +132,7 @@
 {{--                    </div>--}}
                  </div>
 
-        <div style="width:60%;height: 315px;float: left;">
+        <div style="width:60%;height: 320px;float: left;">
             <p style="padding: 2px 15px;">
 {{--                <img src="../../../public/img/euro.jpeg" alt="" style="width: 30px;height: 30px;">--}}
                 <span class="bg-dark" style="display: inline-block; background: black;width: 25px;height: 25px;color: white;margin-top: 10px;

@@ -127,9 +127,9 @@
 
 
 
-                    <div style="width: 100%;height:60px;border-right: solid 1px black;border-left: solid 1px black;border-bottom: solid 1px black;margin-top: 0px;">
+{{--                    <div style="width: 100%;height:60px;border-right: solid 1px black;border-left: solid 1px black;border-bottom: solid 1px black;margin-top: 0px;">--}}
 
-                    </div>
+{{--                    </div>--}}
                  </div>
 
         <div style="width:60%;height: 370px;float: left;border-left: 1px solid green;">
@@ -209,6 +209,9 @@
 {{--            <div style="width: 95%;padding-right:30px;border-right: solid 1px black;border-bottom: solid 1px black;height: 61px;clear: both;margin-top: -110px;font-weight: bold;font-size: 22px;text-align: right;">--}}
 {{--                <span style="margin-top: 10px;display: inline-block;">123 ></span>--}}
 {{--            </div>--}}
+        </div>
+        <div style="width: 100%;height: 40px;border: solid 1px red;">
+            kdlkjkljd
         </div>
     </div>
     <div style="position: fixed;top: 200px;right: -85px;width: 230px;height: 20px;transform: rotate(-90deg);font-size: 7px;">

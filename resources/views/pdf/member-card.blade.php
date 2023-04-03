@@ -224,7 +224,7 @@
 
             <div class="check" style="width: 100%;">
                 <span style="font-size: 13px; margin-right: 15px; font-weight: bolder;width:20%;">Iscritto a YoSid </span>
-                <input style="font-size: 14px; font-weight: bolder; display: inline-block; margin: -5px 5px; color: #1a1e21;width:20%;" type="checkbox" name="yo_sid" @if($member->yo_sid==0) checked @endif />
+                <input style="font-size: 14px; font-weight: bolder; display: inline-block; margin: -5px 5px; color: #1a1e21;width:20%;" type="checkbox" name="yo_sid" @if($member->yo_sid==1) checked @endif />
                 <span style="width:60%;font-size: 13px;font-weight: bolder;">Hai 40 anni non compiuti? Iscriviti a YoSid
 
                     <label style="margin-left: 10px;margin-bottom:-3px;border: solid 1px black;width:20px;height: 10px;font-size: 13px;font-weight: bold;padding: 3px;text-align:center;line-height: 13px;">Si</label>

@@ -138,7 +138,7 @@ class QuotaController extends Controller
                 $sent->email = $member->email;
                 $sent->scheda_path = 'attachments/'.(Carbon::now()->format('Y')).'/scheda_'. $member->name . '_' .$member->surname. '.pdf';
                 $sent->privacy_path = $privacyPath;
-                $sent->payment_path = 'attachments/'.(Carbon::now()->format('Y')).'/scheda_'. $member->name . '_' .$member->surname. '.pdf';
+                $sent->payment_path = 'attachments/'.(Carbon::now()->format('Y')).'/bolletino_'. $member->name . '_' .$member->surname. '.pdf';
                 $sent->courses_path = NULL;
                 $sent->year = (Carbon::now()->format('Y'));
                 $sent->region = $request->region;

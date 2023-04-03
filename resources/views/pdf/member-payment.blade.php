@@ -224,7 +224,7 @@
     <div  style="width:97%;height:60px;margin-right:15px;margin-top: -1px;border-bottom: solid 1px black;border-right: solid 1px black;border-left: solid 1px black;">
         <div style="width: 40%;float: left;height: 60px;"></div>
         <div style="width: 60%;border-left: solid 1px black;float: right;height: 60px;margin-left: 1px;text-align: right;font-weight: bold;font-size: 10px;">
-            <h3 style="display: inline-block;margin-right: 20px;line-height: 35px;font-size: 22px;">123 ></h3>
+            <h3 style="display: inline-block;margin-right: 20px;line-height: 30px;font-size: 22px;">123 ></h3>
         </div>
     </div>
 </div>

@@ -140,6 +140,9 @@
                 <span>sul C/C n. &nbsp;&nbsp;&nbsp;&nbsp; <b>88043005</b></span>
                 <span style="margin-left: 120px;">di Euro &nbsp;&nbsp;&nbsp;&nbsp;<b>{{ round($balance) ?? ''}}</b> </span>
             </p>
+            <p style="text-transform: uppercase;font-size: 9px;padding:0px 11px;margin-top: -10px">
+                importo in lettere: <b style="padding-left: 10px;font-size: 11px;">{{ $converted ?? ''}}</b>
+            </p>
 {{--            <p style="text-transform: uppercase;font-size: 9px;padding:-11px 11px;">--}}
 {{--                <b style="font-weight: bolder;font-size: 14px;">TD &nbsp;123 </b>--}}
 {{--                &nbsp;&nbsp;&nbsp;&nbsp;importo in lettere: <b style="padding-left: 10px;font-size: 11px;">{{ $converted ?? ''}}</b>--}}

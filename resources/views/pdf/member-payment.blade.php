@@ -102,15 +102,15 @@
                         <p style="font-size: 13px;padding: 2px 30px;text-transform: none;border-bottom: solid 1px black;">pagamento quota/e associativale</p>
 
                     </fieldset>
-                    <fieldset style="border: solid 1px black;padding:1px 10px;margin:12px 10px;border-radius: 5px;height: 60px;width: 50%;">
+                    <fieldset style="border: solid 1px black;padding:1px 10px;margin:12px 10px;border-radius: 5px;height:auto;width: 50%;">
                         <legend style="text-transform: uppercase;font-size: 8px;width: auto;"><b style="text-transform: uppercase;border: none;">eseguito da</b></legend>
-                        <p style="font-weight: bold;text-transform: capitalize;border-bottom: 1px solid black;font-size: 11px;padding-top: 1px;padding-bottom: 0px;">{{$member->surname ?? ''}} {{$member->name ?? ''}}</p>
-                        <p style="text-transform: uppercase;font-size: 8px;font-weight: bolder;margin-top: -5px;padding-top: 1px;padding-bottom: 0px;">via-piazza</p>
-                        <p style="font-weight: bold;text-transform: capitalize;border-bottom: 1px solid black;font-size: 11px;padding-top: 1px;padding-bottom: 0px;">{{$member->residence->residence ?? ''}}</p>
-                        <p style="text-transform: uppercase;font-size: 8px;font-weight: bolder;margin-top: -5px;padding-top: 1px;padding-bottom: 0px;">cap</p>
-                        <p style="font-weight: bold;text-transform: capitalize;border-bottom: 1px solid black;font-size: 11px;padding-top: 1px;padding-bottom: 0px;">{{$member->residence->cap ?? ''}}</p>
-                        <p style="text-transform: uppercase;font-size: 8px;font-weight: bolder;margin-top: -5px;padding-top: 1px;padding-bottom: 0px;">localita</p>
-                        <p style="font-weight: bold;text-transform: capitalize;border-bottom: 1px solid black;font-size: 11px;padding-top: 1px;padding-bottom: 0px;">{{$member->residence->city ?? ''}}</p>
+                        <p style="font-weight: bold;text-transform: capitalize;border-bottom: 1px solid black;font-size: 11px;padding-top: 0px;padding-bottom: 0px;">{{$member->surname ?? ''}} {{$member->name ?? ''}}</p>
+                        <p style="text-transform: uppercase;font-size: 8px;font-weight: bolder;margin-top: -5px;padding-top: 0px;padding-bottom: 0px;">via-piazza</p>
+                        <p style="font-weight: bold;text-transform: capitalize;border-bottom: 1px solid black;font-size: 11px;padding-top: 0px;padding-bottom: 0px;">{{$member->residence->residence ?? ''}}</p>
+                        <p style="text-transform: uppercase;font-size: 8px;font-weight: bolder;margin-top: -5px;padding-top: 0px;padding-bottom: 0px;">cap</p>
+                        <p style="font-weight: bold;text-transform: capitalize;border-bottom: 1px solid black;font-size: 11px;padding-top: 0px;padding-bottom: 0px;">{{$member->residence->cap ?? ''}}</p>
+                        <p style="text-transform: uppercase;font-size: 8px;font-weight: bolder;margin-top: -5px;padding-top: 0px;padding-bottom: 0px;">localita</p>
+                        <p style="font-weight: bold;text-transform: capitalize;border-bottom: 1px solid black;font-size: 11px;padding-top: 0px;padding-bottom: 0px;">{{$member->residence->city ?? ''}}</p>
 
                     </fieldset>
 

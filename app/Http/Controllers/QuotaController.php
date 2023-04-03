@@ -93,7 +93,6 @@ class QuotaController extends Controller
         foreach($members as $member) {
             if ($member->year_sent != 0) {
 
-                dd($member->toArray(),$member->consent,$member->consent == 0);
                 $privacyPath = null;
                 if($member->consent == 0)
                 {

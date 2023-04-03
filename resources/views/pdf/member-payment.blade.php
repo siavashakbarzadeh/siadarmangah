@@ -81,7 +81,7 @@
     </div>
     <div class="row">
 {{--        40%--}}
-                <div style="width: 40%;height: 310px; float: left;border-right: solid 1px black;">
+                <div style="width: 40%;height: 315px; float: left;border-right: solid 1px black;">
                     <p style="padding: 2px 15px;">
 
                         <span class="bg-dark" style="display: inline-block; background: black;width: 25px;height: 25px;color: white;margin-top: 10px;
@@ -132,7 +132,7 @@
 {{--                    </div>--}}
                  </div>
 
-        <div style="width:60%;height: 310px;float: left;">
+        <div style="width:60%;height: 315px;float: left;">
             <p style="padding: 2px 15px;">
 {{--                <img src="../../../public/img/euro.jpeg" alt="" style="width: 30px;height: 30px;">--}}
                 <span class="bg-dark" style="display: inline-block; background: black;width: 25px;height: 25px;color: white;margin-top: 10px;
@@ -165,7 +165,7 @@
             </div>
 
             <div style="height:auto;width: 65%;float: right;">
-                <fieldset style="border: solid 1px black;padding:1px 15px;margin:-2px 15px;border-radius: 5px;max-height: 30px;">
+                <fieldset style="border: solid 1px black;padding:1px 15px;margin:10px 15px;border-radius: 5px;max-height: 30px;">
                     <legend style="text-transform: uppercase;font-size: 9px;width: auto;"><b style="text-transform: uppercase;border: none;">eseguito da</b></legend>
                     <p style="font-weight: bold;font-size: 14px;padding: 2px 50px;text-transform: uppercase;font-weight: bolder;border-bottom: solid 1px black;">
                         {{$member->surname ?? ''}} {{$member->name ?? ''}}

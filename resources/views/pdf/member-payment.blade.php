@@ -192,20 +192,20 @@
                 </div>
             </div>
 
-            <div style="margin:-53px 0px 0px; ;padding: -30px 4px 0px;clear: both;font-weight: bold;height:20px;width: 100%;"  >
-                <span style="width: 40%;font-size: 8px;text-transform: uppercase;padding-left: 10px;list-style-type: none;font-weight: bold;">
+{{--            <div style="margin:-53px 0px 0px; ;padding: -30px 4px 0px;clear: both;font-weight: bold;height:20px;width: 100%;"  >--}}
+{{--                <span style="width: 40%;font-size: 8px;text-transform: uppercase;padding-left: 10px;list-style-type: none;font-weight: bold;">--}}
 
-                    <li>bollo dell'ufficio postale</li>
+{{--                    <li>bollo dell'ufficio postale</li>--}}
 
-                    <li style="font-size: 7px;text-transform: none;padding-left: 15px;">codice bancoPosta</li>
-                </span>
-                <span style="width: 60%;font-size: 8px;text-transform: uppercase;padding-left: 10px;list-style-type: none;float: right;margin-top: -23px;font-weight: bold;">
+{{--                    <li style="font-size: 7px;text-transform: none;padding-left: 15px;">codice bancoPosta</li>--}}
+{{--                </span>--}}
+{{--                <span style="width: 60%;font-size: 8px;text-transform: uppercase;padding-left: 10px;list-style-type: none;float: right;margin-top: -23px;font-weight: bold;">--}}
 
-                    <li>importante:non scrivere nella zona sottostcinte</li>
+{{--                    <li>importante:non scrivere nella zona sottostcinte</li>--}}
 
-                    <li style="font-size: 7px;text-transform: none;padding-left: 84px;">importo in euro &nbsp;&nbsp;  numero conto &nbsp;&nbsp;  tipo documento</li>
-                </span>
-            </div>
+{{--                    <li style="font-size: 7px;text-transform: none;padding-left: 84px;">importo in euro &nbsp;&nbsp;  numero conto &nbsp;&nbsp;  tipo documento</li>--}}
+{{--                </span>--}}
+{{--            </div>--}}
 {{--            <div style="width: 95%;padding-right:30px;border-right: solid 1px black;border-bottom: solid 1px black;height: 61px;clear: both;margin-top: -110px;font-weight: bold;font-size: 22px;text-align: right;">--}}
 {{--                <span style="margin-top: 10px;display: inline-block;">123 ></span>--}}
 {{--            </div>--}}

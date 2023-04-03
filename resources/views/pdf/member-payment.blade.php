@@ -84,7 +84,7 @@
                 <div style="width: 40%;height: 300px; float: left;border-right: solid 1px black;">
                     <p style="padding: 2px 15px;">
 
-                        <span class="bg-dark" style="display: inline-block; background: black;width: 25px;height: 25px;color: white;margin-top: 3px;
+                        <span class="bg-dark" style="display: inline-block; background: black;width: 25px;height: 25px;color: white;margin-top: 10px;
                         padding: 5px;text-align: center;font-size: 25px;">€</span>
                         <span>sul C/C n. &nbsp;&nbsp;&nbsp;&nbsp; <b>88043005</b></span>
                         <span style="margin-left: 70px;">di Euro &nbsp;&nbsp;<b>{{ round($balance) ?? ''}}</b>  </span>

@@ -167,7 +167,7 @@
                     </p>
 
                 </fieldset>
-                <fieldset style="border: solid 1px black;padding:0px 10px;margin: 16px 250px;border-radius: 5px;max-height: 30px;">
+                <fieldset style="border: solid 1px black;padding:0px 10px;margin: 16px 25px;border-radius: 5px;max-height: 30px;">
                     <legend style="text-transform: uppercase;font-size: 9px;width: auto;"><b style="text-transform: uppercase;border: none;">via-piazza</b></legend>
                     <p style="font-weight: 200;font-size: 11px;padding: 2px 50px;text-transform: uppercase;font-weight: bolder;">
                         {{$member->residence->residence ?? ''}}

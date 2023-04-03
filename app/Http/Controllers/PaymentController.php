@@ -263,6 +263,8 @@ class PaymentController extends Controller
             activity()->log(Auth::user()->name. ' ' .Auth::user()->surname.' ha eliminato una ricevuta di '.$member->name.' '.$member->surname);
             $flasher->addSuccess('Ricevuta eliminata', 'Operazione conclusa con successo');
             return redirect(route('payment-list', $payment->member_id));
+        }else{
+            return redirect()->route('payment-list',$payment->member_id);
         }
     }
 

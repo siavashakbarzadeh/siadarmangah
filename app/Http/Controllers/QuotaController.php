@@ -90,11 +90,10 @@ class QuotaController extends Controller
         $studyGroups = StudyGroup::all();
         $committess = Committee::all();
 
-        dd($members->toArray());
         foreach($members as $member) {
             if ($member->year_sent != 0) {
 
-                dd($members,$member->consent);
+                dd($members,$member->consent,$member->consent == 0);
                 $privacyPath = null;
                 if($member->consent == 0)
                 {

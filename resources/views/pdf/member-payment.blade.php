@@ -220,7 +220,7 @@
         Mod CH 8 ter-Mod12409A-ed1/10-EP1902/EP1903-St.[3]
     </div>
 </div>
-<div style="padding: 0px 11px;">
+<div >
     <div  style="width:100%;height:60px;margin:0px auto ;border: solid 1px red;">
         kdlkjkljd
     </div>

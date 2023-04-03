@@ -222,8 +222,8 @@
 </div>
 <div >
     <div  style="width:97%;height:60px;margin-right:14px;margin-top: -1px;">
-        <div style="width: 40%;border: solid 1px red;float: left;"></div>
-        <div style="width: 60%;border: solid 1px green;float: right;"></div>
+        <div style="width: 40%;border: solid 1px red;float: left;height: 60px;"></div>
+        <div style="width: 60%;border: solid 1px green;float: right;height: 60px;"></div>
     </div>
 </div>
 </body>

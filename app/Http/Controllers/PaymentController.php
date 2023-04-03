@@ -245,22 +245,22 @@ class PaymentController extends Controller
         $paymentTypeDelete=null;
         $receiptDelete=null;
         if ($paymentType){
-            $paymentTypeDelete = $paymentType->delete();
+//            $paymentTypeDelete = $paymentType->delete();
         }
         if ($receipt){
-            $receiptDelete = $receipt->delete();
+//            $receiptDelete = $receipt->delete();
         }
 
-        File::delete(storage_path(env('DOWNLOAD_URL').optional($payment->receipt)->path));
+//        File::delete(storage_path(env('DOWNLOAD_URL').optional($payment->receipt)->path));
 
         if($receiptDelete && $paymentTypeDelete)
         {
-            $payment->payed_amount = 0;
-            $payment->paid = null;
-            $payment->payment_date = null;
-            $payment->save();
-            $member = Member::find($payment->member_id);
-            activity()->log(Auth::user()->name. ' ' .Auth::user()->surname.' ha eliminato una ricevuta di '.$member->name.' '.$member->surname);
+//            $payment->payed_amount = 0;
+//            $payment->paid = null;
+//            $payment->payment_date = null;
+//            $payment->save();
+//            $member = Member::find($payment->member_id);
+//            activity()->log(Auth::user()->name. ' ' .Auth::user()->surname.' ha eliminato una ricevuta di '.$member->name.' '.$member->surname);
             $flasher->addSuccess('Ricevuta eliminata', 'Operazione conclusa con successo');
             return redirect(route('payment-list', $payment->member_id));
         }else{

@@ -210,9 +210,10 @@
 {{--                <span style="margin-top: 10px;display: inline-block;">123 ></span>--}}
 {{--            </div>--}}
         </div>
-        <div style="width: 100%;height: 40px;border: solid 1px red;">
-            kdlkjkljd
-        </div>
+
+    </div>
+    <div style="width: 100%;height: 40px;border: solid 1px red;">
+        kdlkjkljd
     </div>
     <div style="position: fixed;top: 200px;right: -85px;width: 230px;height: 20px;transform: rotate(-90deg);font-size: 7px;">
         Mod CH 8 ter-Mod12409A-ed1/10-EP1902/EP1903-St.[3]

@@ -97,7 +97,7 @@
                             <p style="font-weight: bold;font-size: 13px;text-transform: uppercase;font-weight: bolder;border-bottom: solid 1px black;">società italiana di diabetologia</p>
 
                         </fieldset>
-                    <fieldset style="border: solid 1px black;padding: 10px;margin:12px 10px;border-radius: 5px;max-height: 30px;">
+                    <fieldset style="border: solid 1px black;padding: 1px 15px;margin:12px 10px;border-radius: 5px;height: 25px;">
                         <legend style="text-transform: uppercase;font-size: 9px;width: auto;"><b style="text-transform: uppercase;border: none;">causale</b></legend>
                         <p style="font-size: 13px;padding: 2px 30px;text-transform: none;border-bottom: solid 1px black;">pagamento quota/e associativale</p>
 

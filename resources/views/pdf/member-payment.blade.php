@@ -116,7 +116,7 @@
 
                     </p>
 
-                    <div style="margin:-28px 0px;padding: 4px;clear: both;font-weight: bold;height:20px;width: 96%;"  >
+                    <div style="margin:-30px 0px;padding: 4px;clear: both;font-weight: bold;height:20px;width: 96%;"  >
                     <span style="width: 100%;font-size: 8px;text-transform: uppercase;margin-right: 30px;list-style-type: none;font-weight: bold;text-align: right;">
 
                     <li style="margin-bottom=0px;margin-right: 40px;">bollo dell'ufficio postale</li>

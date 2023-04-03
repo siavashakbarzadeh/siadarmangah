@@ -175,14 +175,14 @@
 
                 </fieldset>
                 <div  style="padding:0px;margin: 20px 0px;max-height: 50px;width: 89%;">
-                    <fieldset style="border: solid 1px black;padding:4px 0px;margin: -10px 0px 3px 15px;border-radius: 5px;height: 20px;width: 30%;">
+                    <fieldset style="border: solid 1px black;padding:4px 0px;margin: -10px 0px 10px 15px;border-radius: 5px;height: 20px;width: 30%;">
                         <legend style="text-transform: uppercase;font-size: 9px;width: auto;"><b style="text-transform: uppercase;border: none;">cap</b></legend>
                         <p style="font-weight: 200;font-size: 11px;padding: 2px 50px;text-transform: uppercase;">
                             {{$member->residence->cap ?? ''}}
                         </p>
 
                     </fieldset>
-                    <fieldset style="border: solid 1px black;padding:4px 0px;margin: -10px 15px;border-radius: 5px;height: 20px;width: 60%;float: right">
+                    <fieldset style="border: solid 1px black;padding:4px 0px;margin: -30px 0px 10px 0px;border-radius: 5px;height: 20px;width: 60%;float: right">
                         <legend style="text-transform: uppercase;font-size: 9px;width: auto;"><b style="text-transform: uppercase;border: none;">localita</b></legend>
                         <p style="font-weight: 200;font-size: 11px;padding: 2px 20px;text-transform: uppercase;">
                             {{$member->residence->city ?? ''}}

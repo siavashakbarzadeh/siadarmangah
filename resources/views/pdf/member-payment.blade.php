@@ -151,7 +151,7 @@
             </p>
 
             </fieldset>
-            <fieldset style="border: solid 1px black;padding: 1px 15px;margin:10px 25px;border-radius: 5px;max-height: 30px;">
+            <fieldset style="border: solid 1px black;padding: 1px 15px;margin:10px 10px;border-radius: 5px;max-height: 30px;">
                 <legend style="text-transform: uppercase;font-size: 8px;width: auto;"><b style="text-transform: uppercase;border: none;">causale</b></legend>
                 <p style="font-size: 14px;padding: 2px 100px;text-transform: none;border-bottom: solid 1px black;">pagamento quota/e associativale</p>
             </fieldset>
@@ -160,14 +160,14 @@
             </div>
 
             <div style="height:auto;width: 65%;float: right;">
-                <fieldset style="border: solid 1px black;padding:1px 15px;margin:-4px 25px;border-radius: 5px;max-height: 30px;">
+                <fieldset style="border: solid 1px black;padding:1px 15px;margin:-4px 10px;border-radius: 5px;max-height: 30px;">
                     <legend style="text-transform: uppercase;font-size: 9px;width: auto;"><b style="text-transform: uppercase;border: none;">eseguito da</b></legend>
                     <p style="font-weight: bold;font-size: 14px;padding: 2px 50px;text-transform: uppercase;font-weight: bolder;border-bottom: solid 1px black;">
                         {{$member->surname ?? ''}} {{$member->name ?? ''}}
                     </p>
 
                 </fieldset>
-                <fieldset style="border: solid 1px black;padding:0px 10px;margin: 16px 25px;border-radius: 5px;max-height: 50px;">
+                <fieldset style="border: solid 1px black;padding:0px 10px;margin: 16px 250px;border-radius: 5px;max-height: 30px;">
                     <legend style="text-transform: uppercase;font-size: 9px;width: auto;"><b style="text-transform: uppercase;border: none;">via-piazza</b></legend>
                     <p style="font-weight: 200;font-size: 11px;padding: 2px 50px;text-transform: uppercase;font-weight: bolder;">
                         {{$member->residence->residence ?? ''}}

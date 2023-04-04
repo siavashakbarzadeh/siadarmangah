@@ -239,7 +239,9 @@ class PaymentController extends Controller
 
     public function visualizzaPdf($payment)
     {
-        return pdf::loadView('pdf.member-receipt',[])->download();
+        $payment = Payment::query()->findOrFail($payment);
+        dd($payment->toArray());
+        return pdf::loadView('pdf.member-receipt',compact('payment'))->download();
     }
 
     public function deleteReceipt($receipt_id, FlasherInterface $flasher)

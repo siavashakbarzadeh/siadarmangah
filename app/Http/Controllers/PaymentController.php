@@ -234,13 +234,15 @@ class PaymentController extends Controller
     public function download($receipt_id)
     {
         $receipt = MemberReceipt::where('member_payment_id','=',$receipt_id)->first();
-        return response()->download(storage_path(env('DOWNLOAD_URL').$receipt->path));
+        return pdf::loadView('pdf.member-receipt',[
+            'payment'
+        ])->download();
     }
 
-    public function visualizzaPdf($receipt)
+    public function visualizzaPdf($payment)
     {
-        $payment = Payment::query()->findOrFail($receipt);
-//        dd($payment->toArray(),$payment->->toArray());member
+        $payment = Payment::query()->findOrFail($payment);
+        dd($payment->toArray(),$payment->member->toArray());
         return pdf::loadView('pdf.member-receipt',compact('payment'))->download();
     }
 

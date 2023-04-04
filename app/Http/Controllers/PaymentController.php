@@ -154,7 +154,7 @@ class PaymentController extends Controller
         ]);
     }
 
-    public function add(Request $request)
+    public function add(Request $request,FlasherInterface $flasher)
     {
         $validator = Validator::make($request->all(), [
             'payments' => ['required','array','min:1'],
@@ -167,7 +167,8 @@ class PaymentController extends Controller
         ]);
 
         if($validator->fails()){
-            return $validator->messages();
+            $flasher->error($validator->messages()['payments']);
+            return redirect()->back();
         }
 //        $paymentsData = [];
         foreach($request->payments as $paymentData) {

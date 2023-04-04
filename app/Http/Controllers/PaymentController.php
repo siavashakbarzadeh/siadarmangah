@@ -197,10 +197,10 @@ class PaymentController extends Controller
         $receipt->path = 'receipts/ricevuta_' . $request->payments[array_key_first($request->payments)]['payment_id'] . '.pdf';
         $receipt->sent = 0;
         $receipt->save();
-
+/*
         $pdf = pdf::loadView('pdf.member-receipt', compact('payment'))
          ->setOptions(['defaultFont' => 'sans-serif', 'isRemoteEnabled' => true, 'isHtml5ParserEnabled' => true]);
-        $pdf->save(storage_path('app/public/receipts/ricevuta_' . $request->payments[array_key_first($request->payments)]['payment_id'] . '.pdf'));
+        $pdf->save(storage_path('app/public/receipts/ricevuta_' . $request->payments[array_key_first($request->payments)]['payment_id'] . '.pdf'));*/
 
         return redirect(route('payment-list', $payment->member_id));
     }

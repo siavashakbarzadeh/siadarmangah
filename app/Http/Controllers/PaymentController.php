@@ -162,6 +162,7 @@ class PaymentController extends Controller
             'row.*.payment_type' => 'required',
             'row.*.payment_id' => 'required'
         ]);
+        dd($request->all());
 
         if($validator->fails()){
             return $validator->messages();
@@ -230,7 +231,7 @@ class PaymentController extends Controller
     {
         return view('pdf.test-receipts');
     }
-    
+
 
     public function visualizzaPdf($payment)
     {

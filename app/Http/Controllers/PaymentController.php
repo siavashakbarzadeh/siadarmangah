@@ -157,15 +157,17 @@ class PaymentController extends Controller
     public function add(Request $request)
     {
         $validator = Validator::make($request->all(), [
-            'row.*.date' => 'required',
-            'row.*.payment_reason' => 'required',
-            'row.*.payment_type' => 'required',
-            'row.*.payment_id' => 'required'
+            'payments' => ['required','array','min:1'],
+            'payments.*' => ['required','array:payment_id,date,payment_reason,payed_amount,payment_type'],
+            'payments.*.payment_id' => ['required'],
+            'payments.*.date' => ['required'],
+            'payments.*.payment_reason' => ['required'],
+            'payments.*.payed_amount' => ['required'],
+            'payments.*.payment_type' => ['required'],
         ]);
-        dd($request->all());
 
         if($validator->fails()){
-            return $validator->messages();
+            return redirect()->back();
         }
         $paymentsData = [];
         foreach($request->payments as $paymentData) {

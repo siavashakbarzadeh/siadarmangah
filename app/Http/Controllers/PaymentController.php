@@ -167,7 +167,8 @@ class PaymentController extends Controller
         ]);
 
         if($validator->fails()){
-            $flasher->error($validator->messages()['payments']);
+
+            $flasher->error($validator->messages()->first('payments'));
             return redirect()->back();
         }
 //        $paymentsData = [];

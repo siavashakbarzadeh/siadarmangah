@@ -132,6 +132,7 @@
                                         </form>
                                         <tbody>
                                             @foreach($receipts as $receipt)
+                                                @dd($receipt)
                                                 <tr class="{{(\Carbon\Carbon::parse($receipt->payment->payment_date)->format('d-m-Y') == \Carbon\Carbon::today()->format('d-m-Y')) ? 'last-receipts' : ''}}">
                                                     <td> <input value="{{\Carbon\Carbon::parse($receipt->payment->payment_date)->format('d-m-Y')}}" class="form-control" type="text" readonly /> </td>
                                                     <td>

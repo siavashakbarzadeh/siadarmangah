@@ -132,7 +132,6 @@
                                         </form>
                                         <tbody>
                                             @foreach($receipts as $receipt)
-                                                @dd($receipt)
                                                 <tr class="{{(\Carbon\Carbon::parse($receipt->payment->payment_date)->format('d-m-Y') == \Carbon\Carbon::today()->format('d-m-Y')) ? 'last-receipts' : ''}}">
                                                     <td> <input value="{{\Carbon\Carbon::parse($receipt->payment->payment_date)->format('d-m-Y')}}" class="form-control" type="text" readonly /> </td>
                                                     <td>
@@ -142,7 +141,7 @@
                                                     </td>
                                                     <td> <i data-path="{{\Illuminate\Support\Facades\Storage::url($receipt->path)}}" class="fas fa-print printer pointer blue-link"></i> </td>
                                                     <td> <i onclick="send({{$receipt->id}},{{$receipt->member_id}})" class="fas fa-envelope pointer blue-link"></i> </td>
-                                                    <td> <a href="{{route('payment.visualizza-pdf',$receipt->member_payment_id)}}" target="_blank"> <i class="fas fa-desktop"></i> </a> </td>
+                                                    <td> <a href="{{route('payment.visualizza-pdf',$receipt->id)}}" target="_blank"> <i class="fas fa-desktop"></i> </a> </td>
                                                     <td><a href="{{route('download-receipt', $receipt->id)}}"> <i class="fas fa-download"></i> </a> </td>
                                                     <td>
 

@@ -167,9 +167,9 @@ class PaymentController extends Controller
         ]);
 
         if($validator->fails()){
-            return redirect()->back();
+            return $validator->messages();
         }
-        $paymentsData = [];
+//        $paymentsData = [];
         foreach($request->payments as $paymentData) {
             $payment = Payment::find($paymentData['payment_id']);
             $payment->payment_type_id = $paymentData['payment_type'];
@@ -180,7 +180,7 @@ class PaymentController extends Controller
             $payment->save();
             $converter = new NumberToLetterConverter();
             $payment_amount_letter = $converter->to_word($paymentData['payed_amount'],"EUR");
-            $paymentsData[] = [
+ /*           $paymentsData[] = [
                 'date' => $payment->date,
                 'payed_amount' => $payment->payed_amount,
                 'payment_amount_letter' => $payment_amount_letter,
@@ -188,7 +188,7 @@ class PaymentController extends Controller
                 'member_name' => $payment->member->name,
                 'member_surname' => $payment->member->surname,
                 'member_qualification' => $payment->member->qualification
-            ];
+            ];*/
         }
 
         $receipt = new MemberReceipt();

@@ -162,7 +162,7 @@ class PaymentController extends Controller
             'row.*.payment_type' => 'required',
             'row.*.payment_id' => 'required'
         ]);
-//        dd($request->all());
+        dd($request->all());
 
         if($validator->fails()){
             return $validator->messages();

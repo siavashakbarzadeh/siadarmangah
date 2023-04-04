@@ -230,19 +230,11 @@ class PaymentController extends Controller
     {
         return view('pdf.test-receipts');
     }
-
-    public function download($receipt_id)
-    {
-        $receipt = MemberReceipt::where('member_payment_id','=',$receipt_id)->first();
-        return pdf::loadView('pdf.member-receipt',[
-            'payment'
-        ])->download();
-    }
+    
 
     public function visualizzaPdf($payment)
     {
         $payment = Payment::query()->findOrFail($payment);
-        dd($payment->toArray(),$payment->member->toArray());
         return pdf::loadView('pdf.member-receipt',compact('payment'))->download();
     }
 

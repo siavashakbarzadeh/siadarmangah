@@ -142,7 +142,7 @@
                                                     <td> <i data-path="{{\Illuminate\Support\Facades\Storage::url($receipt->path)}}" class="fas fa-print printer pointer blue-link"></i> </td>
                                                     <td> <i onclick="send({{$receipt->id}},{{$receipt->member_id}})" class="fas fa-envelope pointer blue-link"></i> </td>
                                                     <td> <a href="{{route('payment.visualizza-pdf',$receipt->member_payment_id)}}"> <i class="fas fa-desktop"></i> </a> </td>
-                                                    <td><a href="{{route('download-receipt', $receipt->member_payment_id)}}"> <i class="fas fa-download"></i> </a> </td>
+                                                    <td><a href="{{route('payment.visualizza-pdf',$receipt->member_payment_id)}}"> <i class="fas fa-download"></i> </a> </td>
                                                     <td>
 
                                                         <form action="{{route('delete-receipt', $receipt->id)}}">
